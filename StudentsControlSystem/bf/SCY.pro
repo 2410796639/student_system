@@ -37,3 +37,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 CONFIG+=C++11
+
+RESOURCES +=

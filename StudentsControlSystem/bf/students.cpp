@@ -106,3 +106,17 @@ int Students::getPunishment(int count)
     }
     return Punishment[count-1];
 }
+float Students::getAverageGrade()
+{
+    float sum = 0;
+    for(int i=0 ;i<5;i++)
+    {
+        sum += Mycourse[i].getGrade()*Mycourse[i].getCredit();
+    }
+    int sum_credit = 0;
+    for(int i=0;i<5;i++)
+    {
+        sum_credit += Mycourse[i].getCredit();
+    }
+    return (float)sum/sum_credit;
+}

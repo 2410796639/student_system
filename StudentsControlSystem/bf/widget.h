@@ -9,6 +9,8 @@
 #include <QMessageBox>
 #include <QFile>
 #include <QTextStream>
+#include <QTimer>
+#include <QTimerEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -25,6 +27,7 @@ public:
     Class myclass;
     QFile file_begin;
     QFile file_end;
+    QString defaultCode;
 
 
     //学生端学生姓名
@@ -33,6 +36,10 @@ public:
     QDialog *Get_information;
     //管理端获取密码的对话框
     QDialog *Get_code;
+
+    //管理端修改密码的对话框
+    QDialog *Change_Code;
+
  /*   //学生端基本信息查询的对话框
     QDialog *Search_student;
     //学生端班级信息查询的对话框
@@ -55,6 +62,12 @@ public:
     QDialog *Manage_pride;*/
     //重写关闭事件
     void closeEvent(QCloseEvent *event);
+
+protected:
+
+    void timerEvent(QTimerEvent*);
+
+    void paintEvent(QPaintEvent*);
 
 private slots:
 
@@ -107,6 +120,15 @@ private slots:
     void on_pride_search_clicked();
 
     void on_back_2_clicked();
+
+    void on_add_page_clicked();
+
+    int samename(QString Name);
+
+private:
+    Students *samename_inf[100];
+
+    int timeID;
 
 private:
     Ui::Widget *ui;

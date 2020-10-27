@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>633</width>
-    <height>540</height>
+    <width>650</width>
+    <height>674</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -83,6 +83,9 @@
               <height>150</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
             <property name="text">
              <string>管理端</string>
             </property>
@@ -121,6 +124,9 @@
               <width>200</width>
               <height>150</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
             </property>
             <property name="text">
              <string>学生端</string>
@@ -221,6 +227,9 @@
               <height>50</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
             <property name="text">
              <string>课程查询</string>
             </property>
@@ -233,6 +242,9 @@
               <width>0</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
             </property>
             <property name="text">
              <string>基本信息</string>
@@ -295,6 +307,9 @@
               <height>50</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
             <property name="text">
              <string>奖惩情况</string>
             </property>
@@ -307,6 +322,9 @@
               <width>0</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
             </property>
             <property name="text">
              <string>成绩查询</string>
@@ -742,19 +760,6 @@
        <item>
         <widget class="QWidget" name="widget_13" native="true">
          <layout class="QGridLayout" name="gridLayout_11">
-          <item row="9" column="3">
-           <widget class="QLabel" name="fifth_name">
-            <property name="font">
-             <font>
-              <family>楷体</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>fifth_name</string>
-            </property>
-           </widget>
-          </item>
           <item row="7" column="1">
            <widget class="QLabel" name="label_45">
             <property name="font">
@@ -781,8 +786,8 @@
             </property>
            </spacer>
           </item>
-          <item row="3" column="1">
-           <widget class="QLabel" name="label_41">
+          <item row="9" column="3">
+           <widget class="QLabel" name="fifth_name">
             <property name="font">
              <font>
               <family>楷体</family>
@@ -790,7 +795,7 @@
              </font>
             </property>
             <property name="text">
-             <string>第二门课：</string>
+             <string>fifth_name</string>
             </property>
            </widget>
           </item>
@@ -806,32 +811,6 @@
              </size>
             </property>
            </spacer>
-          </item>
-          <item row="0" column="2">
-           <spacer name="verticalSpacer_9">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="3" column="3">
-           <widget class="QLabel" name="second_name">
-            <property name="font">
-             <font>
-              <family>楷体</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>second_name</string>
-            </property>
-           </widget>
           </item>
           <item row="10" column="2">
            <spacer name="verticalSpacer_10">
@@ -872,8 +851,47 @@
             </property>
            </spacer>
           </item>
-          <item row="1" column="4">
-           <spacer name="horizontalSpacer_29">
+          <item row="0" column="2">
+           <spacer name="verticalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLabel" name="second_name">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>second_name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_41">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>第二门课：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_28">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -885,8 +903,8 @@
             </property>
            </spacer>
           </item>
-          <item row="9" column="1">
-           <widget class="QLabel" name="label_47">
+          <item row="5" column="1">
+           <widget class="QLabel" name="label_43">
             <property name="font">
              <font>
               <family>楷体</family>
@@ -894,7 +912,7 @@
              </font>
             </property>
             <property name="text">
-             <string>第五门课：</string>
+             <string>第三门课：</string>
             </property>
            </widget>
           </item>
@@ -907,19 +925,6 @@
              <size>
               <width>20</width>
               <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="1" column="0">
-           <spacer name="horizontalSpacer_28">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
              </size>
             </property>
            </spacer>
@@ -937,8 +942,8 @@
             </property>
            </widget>
           </item>
-          <item row="5" column="1">
-           <widget class="QLabel" name="label_43">
+          <item row="9" column="1">
+           <widget class="QLabel" name="label_47">
             <property name="font">
              <font>
               <family>楷体</family>
@@ -946,9 +951,22 @@
              </font>
             </property>
             <property name="text">
-             <string>第三门课：</string>
+             <string>第五门课：</string>
             </property>
            </widget>
+          </item>
+          <item row="1" column="5">
+           <spacer name="horizontalSpacer_29">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
           <item row="7" column="3">
            <widget class="QLabel" name="forth_name">
@@ -960,19 +978,6 @@
             </property>
             <property name="text">
              <string>forth_name</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="3">
-           <widget class="QLabel" name="third_name">
-            <property name="font">
-             <font>
-              <family>楷体</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>third_name</string>
             </property>
            </widget>
           </item>
@@ -988,6 +993,54 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item row="5" column="3">
+           <widget class="QLabel" name="third_name">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>third_name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QLabel" name="search_credit1">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QLabel" name="search_credit2">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="4">
+           <widget class="QLabel" name="search_credit3">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="4">
+           <widget class="QLabel" name="search_credit4">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="4">
+           <widget class="QLabel" name="search_credit5">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -1066,32 +1119,6 @@
        <item>
         <widget class="QWidget" name="widget_15" native="true">
          <layout class="QGridLayout" name="gridLayout_12">
-          <item row="3" column="3">
-           <widget class="QLabel" name="second_score">
-            <property name="font">
-             <font>
-              <family>楷体</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>second_score</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="4">
-           <spacer name="horizontalSpacer_34">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
           <item row="3" column="2">
            <spacer name="horizontalSpacer_35">
             <property name="orientation">
@@ -1118,19 +1145,6 @@
             </property>
            </widget>
           </item>
-          <item row="3" column="0">
-           <spacer name="horizontalSpacer_33">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
           <item row="1" column="1">
            <widget class="QLabel" name="first_subject_name_2">
             <property name="font">
@@ -1144,21 +1158,8 @@
             </property>
            </widget>
           </item>
-          <item row="4" column="2">
-           <spacer name="verticalSpacer_18">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="9" column="1">
-           <widget class="QLabel" name="fifth_subject_name_2">
+          <item row="3" column="3">
+           <widget class="QLabel" name="second_score">
             <property name="font">
              <font>
               <family>楷体</family>
@@ -1166,9 +1167,35 @@
              </font>
             </property>
             <property name="text">
-             <string>fifth_subject</string>
+             <string>second_score</string>
             </property>
            </widget>
+          </item>
+          <item row="3" column="0">
+           <spacer name="horizontalSpacer_33">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="4">
+           <spacer name="horizontalSpacer_34">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
           <item row="3" column="1">
            <widget class="QLabel" name="second_subject_name_2">
@@ -1183,8 +1210,8 @@
             </property>
            </widget>
           </item>
-          <item row="5" column="3">
-           <widget class="QLabel" name="third_score">
+          <item row="9" column="1">
+           <widget class="QLabel" name="fifth_subject_name_2">
             <property name="font">
              <font>
               <family>楷体</family>
@@ -1192,7 +1219,7 @@
              </font>
             </property>
             <property name="text">
-             <string>third_score</string>
+             <string>fifth_subject</string>
             </property>
            </widget>
           </item>
@@ -1208,6 +1235,97 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item row="4" column="2">
+           <spacer name="verticalSpacer_18">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="3">
+           <widget class="QLabel" name="third_score">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>third_score</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLabel" name="first_score">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>first_score</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="third_subject_name_2">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>third_subject</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="verticalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="8" column="2">
+           <spacer name="verticalSpacer_19">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLabel" name="forth_subject_name_2">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>forth_subject</string>
+            </property>
+           </widget>
           </item>
           <item row="7" column="3">
            <widget class="QLabel" name="forth_score">
@@ -1235,71 +1353,6 @@
             </property>
            </spacer>
           </item>
-          <item row="7" column="1">
-           <widget class="QLabel" name="forth_subject_name_2">
-            <property name="font">
-             <font>
-              <family>楷体</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>forth_subject</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QLabel" name="third_subject_name_2">
-            <property name="font">
-             <font>
-              <family>楷体</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>third_subject</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="2">
-           <spacer name="verticalSpacer_19">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="1" column="3">
-           <widget class="QLabel" name="first_score">
-            <property name="font">
-             <font>
-              <family>楷体</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>first_score</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <spacer name="verticalSpacer_15">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
           <item row="6" column="2">
            <spacer name="verticalSpacer_20">
             <property name="orientation">
@@ -1312,6 +1365,32 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item row="11" column="1">
+           <widget class="QLabel" name="average_name">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>平均分：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="3">
+           <widget class="QLabel" name="average_score">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -1981,6 +2060,71 @@
         </widget>
        </item>
        <item>
+        <widget class="QWidget" name="widget_20" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <spacer name="horizontalSpacer_55">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_62">
+            <property name="styleSheet">
+             <string notr="true">font: 16pt &quot;Arial&quot;;</string>
+            </property>
+            <property name="text">
+             <string>当前班级人数：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_54">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>98</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_56">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
         <widget class="QWidget" name="widget_3" native="true">
          <layout class="QGridLayout" name="gridLayout_4">
           <item row="3" column="6">
@@ -1998,6 +2142,28 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item row="1" column="5">
+           <widget class="QPushButton" name="subject_information_manage">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
+            <property name="text">
+             <string>课程信息管理</string>
+            </property>
+           </widget>
           </item>
           <item row="3" column="0">
            <spacer name="horizontalSpacer_5">
@@ -2039,29 +2205,29 @@
               <height>50</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
             <property name="text">
              <string>奖惩信息管理</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="5">
-           <widget class="QPushButton" name="subject_information_manage">
-            <property name="minimumSize">
+          <item row="2" column="3">
+           <spacer name="verticalSpacer_35">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
              <size>
-              <width>0</width>
-              <height>50</height>
+              <width>20</width>
+              <height>40</height>
              </size>
             </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>课程信息管理</string>
-            </property>
-           </widget>
+           </spacer>
           </item>
           <item row="3" column="2">
            <widget class="QPushButton" name="score_information_manage">
@@ -2070,6 +2236,9 @@
               <width>0</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
             </property>
             <property name="text">
              <string>成绩信息管理</string>
@@ -2089,6 +2258,9 @@
               <width>16777215</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
             </property>
             <property name="text">
              <string>学生信息管理</string>
@@ -2127,22 +2299,6 @@
             </property>
            </spacer>
           </item>
-          <item row="2" column="3">
-           <spacer name="verticalSpacer_35">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
          </layout>
         </widget>
        </item>
@@ -2175,7 +2331,7 @@
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_3">
+           <widget class="QPushButton" name="add_page">
             <property name="text">
              <string>添加</string>
             </property>
@@ -2289,6 +2445,9 @@
                  <height>50</height>
                 </size>
                </property>
+               <property name="styleSheet">
+                <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+               </property>
                <property name="text">
                 <string>修改</string>
                </property>
@@ -2330,6 +2489,9 @@
                  <width>16777215</width>
                  <height>50</height>
                 </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
                </property>
                <property name="text">
                 <string>确认</string>
@@ -2657,6 +2819,9 @@
                  <height>0</height>
                 </size>
                </property>
+               <property name="styleSheet">
+                <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+               </property>
                <property name="text">
                 <string>查询</string>
                </property>
@@ -2788,15 +2953,50 @@
        <item>
         <widget class="QWidget" name="widget_8" native="true">
          <layout class="QGridLayout" name="gridLayout_7">
-          <item row="1" column="3">
-           <widget class="QLineEdit" name="get_student_name_subject">
+          <item row="3" column="6">
+           <spacer name="horizontalSpacer_12">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="3">
+           <widget class="QLineEdit" name="second_subject">
             <property name="minimumSize">
              <size>
               <width>0</width>
               <height>50</height>
              </size>
             </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>50</height>
+             </size>
+            </property>
            </widget>
+          </item>
+          <item row="1" column="8">
+           <spacer name="horizontalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
           <item row="1" column="1">
            <widget class="QLabel" name="label_13">
@@ -2822,8 +3022,53 @@
             </property>
            </widget>
           </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="get_student_name_subject">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="label_15">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>第二门课：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="7">
+           <widget class="QPushButton" name="manage_search_subject">
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
+            <property name="text">
+             <string>查询</string>
+            </property>
+           </widget>
+          </item>
           <item row="10" column="1">
            <spacer name="verticalSpacer_50">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="4" column="1">
+           <spacer name="verticalSpacer_47">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -2851,66 +3096,8 @@
             </property>
            </widget>
           </item>
-          <item row="5" column="1">
-           <widget class="QLabel" name="label_15">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>第二门课：</string>
-            </property>
-           </widget>
-          </item>
           <item row="12" column="1">
            <spacer name="verticalSpacer_51">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="1" column="5">
-           <widget class="QPushButton" name="manage_search_subject">
-            <property name="text">
-             <string>查询</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="4">
-           <spacer name="horizontalSpacer_12">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="4" column="1">
-           <spacer name="verticalSpacer_47">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="8" column="1">
-           <spacer name="verticalSpacer_49">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -2946,22 +3133,6 @@
             </property>
            </widget>
           </item>
-          <item row="11" column="3">
-           <widget class="QLineEdit" name="fifth_subject">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>50</height>
-             </size>
-            </property>
-           </widget>
-          </item>
           <item row="9" column="1">
            <widget class="QLabel" name="label_17">
             <property name="font">
@@ -2987,8 +3158,21 @@
             </property>
            </spacer>
           </item>
-          <item row="9" column="3">
-           <widget class="QLineEdit" name="forth_subject">
+          <item row="8" column="1">
+           <spacer name="verticalSpacer_49">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="11" column="3">
+           <widget class="QLineEdit" name="fifth_subject">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -3000,38 +3184,6 @@
               <width>16777215</width>
               <height>50</height>
              </size>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="5">
-           <widget class="QPushButton" name="manage_alter_subject">
-            <property name="text">
-             <string>修改</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <spacer name="horizontalSpacer_50">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="7" column="1">
-           <widget class="QLabel" name="label_16">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>第三门课：</string>
             </property>
            </widget>
           </item>
@@ -3059,15 +3211,27 @@
             </property>
            </widget>
           </item>
-          <item row="11" column="5">
+          <item row="11" column="7">
            <widget class="QPushButton" name="back_subject">
             <property name="text">
              <string>返回</string>
             </property>
            </widget>
           </item>
-          <item row="5" column="3">
-           <widget class="QLineEdit" name="second_subject">
+          <item row="7" column="1">
+           <widget class="QLabel" name="label_16">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>第三门课：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="3">
+           <widget class="QLineEdit" name="forth_subject">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -3082,13 +3246,20 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="6">
-           <spacer name="horizontalSpacer_15">
+          <item row="3" column="7">
+           <widget class="QPushButton" name="manage_alter_subject">
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
+            <property name="text">
+             <string>修改</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_50">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
@@ -3108,13 +3279,6 @@
             </property>
            </widget>
           </item>
-          <item row="5" column="5">
-           <widget class="QPushButton" name="manage_confirm_subject">
-            <property name="text">
-             <string>确认</string>
-            </property>
-           </widget>
-          </item>
           <item row="6" column="1">
            <spacer name="verticalSpacer_48">
             <property name="orientation">
@@ -3128,6 +3292,16 @@
             </property>
            </spacer>
           </item>
+          <item row="5" column="7">
+           <widget class="QPushButton" name="manage_confirm_subject">
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
+            <property name="text">
+             <string>确认</string>
+            </property>
+           </widget>
+          </item>
           <item row="0" column="1">
            <spacer name="verticalSpacer_52">
             <property name="orientation">
@@ -3140,6 +3314,181 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item row="9" column="4">
+           <widget class="QLineEdit" name="credit4">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="4">
+           <widget class="QLineEdit" name="credit2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="4">
+           <widget class="QLineEdit" name="credit3">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="4">
+           <widget class="QLineEdit" name="credit5">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="5">
+           <widget class="QLabel" name="label_65">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>学分</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="5">
+           <widget class="QLabel" name="label_66">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>学分</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="5">
+           <widget class="QLabel" name="label_67">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>学分</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="5">
+           <widget class="QLabel" name="label_68">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>学分</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="5">
+           <widget class="QLabel" name="label_69">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>学分</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QLineEdit" name="credit1">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -3173,16 +3522,64 @@
        <item>
         <widget class="QWidget" name="widget_9" native="true">
          <layout class="QGridLayout" name="gridLayout_8">
-          <item row="1" column="4">
-           <widget class="QPushButton" name="manage_search_score">
+          <item row="15" column="2">
+           <widget class="QLineEdit" name="rank">
             <property name="minimumSize">
              <size>
               <width>0</width>
               <height>50</height>
              </size>
             </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="1">
+           <widget class="QLabel" name="label_63">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
             <property name="text">
-             <string>查询</string>
+             <string>平 均 分：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="2">
+           <widget class="QLineEdit" name="average">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="1">
+           <widget class="QLabel" name="label_64">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>排    名：</string>
             </property>
            </widget>
           </item>
@@ -3202,6 +3599,22 @@
             </property>
            </widget>
           </item>
+          <item row="1" column="4">
+           <widget class="QPushButton" name="manage_search_score">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
+            <property name="text">
+             <string>查询</string>
+            </property>
+           </widget>
+          </item>
           <item row="1" column="0">
            <spacer name="horizontalSpacer_51">
             <property name="orientation">
@@ -3214,6 +3627,22 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLineEdit" name="first_subject_score">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
           </item>
           <item row="9" column="2">
            <widget class="QLineEdit" name="forth_subject_score">
@@ -3231,50 +3660,8 @@
             </property>
            </widget>
           </item>
-          <item row="11" column="4">
-           <widget class="QPushButton" name="back_score">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>返回</string>
-            </property>
-           </widget>
-          </item>
           <item row="7" column="2">
            <widget class="QLineEdit" name="third_subject_score">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>50</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <spacer name="verticalSpacer_54">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="3" column="2">
-           <widget class="QLineEdit" name="first_subject_score">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -3301,8 +3688,8 @@
             </property>
            </widget>
           </item>
-          <item row="4" column="1">
-           <spacer name="verticalSpacer_55">
+          <item row="0" column="1">
+           <spacer name="verticalSpacer_54">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -3313,6 +3700,18 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_20">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>输入学生姓名：</string>
+            </property>
+           </widget>
           </item>
           <item row="7" column="1">
            <widget class="QLabel" name="third_subject_name">
@@ -3326,17 +3725,18 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QLabel" name="label_20">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-             </font>
+          <item row="4" column="1">
+           <spacer name="verticalSpacer_55">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
             </property>
-            <property name="text">
-             <string>输入学生姓名：</string>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
             </property>
-           </widget>
+           </spacer>
           </item>
           <item row="1" column="3">
            <spacer name="horizontalSpacer_17">
@@ -3363,37 +3763,8 @@
             </property>
            </widget>
           </item>
-          <item row="3" column="4">
-           <widget class="QPushButton" name="manage_alter_score">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>修改</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="6">
-           <spacer name="horizontalSpacer_20">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="2" column="1">
-           <spacer name="verticalSpacer_53">
+          <item row="8" column="1">
+           <spacer name="verticalSpacer_57">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -3433,6 +3804,19 @@
             </property>
            </widget>
           </item>
+          <item row="2" column="1">
+           <spacer name="verticalSpacer_53">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
           <item row="5" column="4">
            <widget class="QPushButton" name="manage_confirm_score">
             <property name="minimumSize">
@@ -3441,13 +3825,48 @@
               <height>50</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
             <property name="text">
              <string>确认</string>
             </property>
            </widget>
           </item>
-          <item row="8" column="1">
-           <spacer name="verticalSpacer_57">
+          <item row="3" column="4">
+           <widget class="QPushButton" name="manage_alter_score">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
+            <property name="text">
+             <string>修改</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="6">
+           <spacer name="horizontalSpacer_20">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="12" column="1">
+           <spacer name="verticalSpacer_59">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -3459,18 +3878,17 @@
             </property>
            </spacer>
           </item>
-          <item row="10" column="1">
-           <spacer name="verticalSpacer_58">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
+          <item row="9" column="1">
+           <widget class="QLabel" name="forth_subject_name">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
             </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
+            <property name="text">
+             <string>第四门课：</string>
             </property>
-           </spacer>
+           </widget>
           </item>
           <item row="5" column="2">
            <widget class="QLineEdit" name="second_subject_score">
@@ -3488,17 +3906,18 @@
             </property>
            </widget>
           </item>
-          <item row="9" column="1">
-           <widget class="QLabel" name="forth_subject_name">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-             </font>
+          <item row="10" column="1">
+           <spacer name="verticalSpacer_58">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
             </property>
-            <property name="text">
-             <string>第四门课：</string>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
             </property>
-           </widget>
+           </spacer>
           </item>
           <item row="6" column="1">
            <spacer name="verticalSpacer_56">
@@ -3513,8 +3932,8 @@
             </property>
            </spacer>
           </item>
-          <item row="12" column="1">
-           <spacer name="verticalSpacer_59">
+          <item row="16" column="1">
+           <spacer name="verticalSpacer_72">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -3525,6 +3944,32 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item row="14" column="1">
+           <spacer name="verticalSpacer_73">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="15" column="4">
+           <widget class="QPushButton" name="back_score">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>返回</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -3570,6 +4015,9 @@
           </item>
           <item row="3" column="6">
            <widget class="QPushButton" name="manage_alter_rewardsandpunishment">
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
             <property name="text">
              <string>修改</string>
             </property>
@@ -3591,6 +4039,9 @@
           </item>
           <item row="1" column="6">
            <widget class="QPushButton" name="manage_search_rewardsandpunishment">
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
             <property name="text">
              <string>查询</string>
             </property>
@@ -3685,6 +4136,9 @@
           </item>
           <item row="5" column="6">
            <widget class="QPushButton" name="manage_confirm_rewardsandpunishment">
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
             <property name="text">
              <string>确认</string>
             </property>
@@ -4085,6 +4539,9 @@
               <height>50</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">border-image:url(&quot;../image/button.jpg&quot;)</string>
+            </property>
             <property name="text">
              <string>删除</string>
             </property>
@@ -4181,7 +4638,275 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="addstudent"/>
+     <widget class="QWidget" name="addstudent">
+      <layout class="QGridLayout" name="gridLayout_15">
+       <item row="10" column="1">
+        <widget class="QLabel" name="label_61">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>生              日：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLineEdit" name="addstudent_gender"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_56">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>11</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>新增学生姓名：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="2">
+        <widget class="QLineEdit" name="addstudent_birth"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="addstudent_name"/>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="addstudent_phone"/>
+       </item>
+       <item row="8" column="2">
+        <widget class="QLineEdit" name="addstudent_place"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_57">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>学生联系方式：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="label_60">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>籍              贯：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <spacer name="verticalSpacer_70">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_58">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>性              别：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="2">
+        <widget class="QPushButton" name="add_back">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>返回</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <spacer name="verticalSpacer_71">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="0">
+        <spacer name="horizontalSpacer_53">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="12" column="1">
+        <widget class="QPushButton" name="add_sure">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>确定</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <spacer name="verticalSpacer_77">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="1">
+        <spacer name="verticalSpacer_76">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="9" column="1">
+        <spacer name="verticalSpacer_75">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <spacer name="verticalSpacer_79">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="1">
+        <spacer name="verticalSpacer_78">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" colspan="4">
+        <widget class="QLabel" name="label_55">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>18</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 28pt &quot;Arial&quot;;
+font: 9pt &quot;楷体&quot;;
+font: 18pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>添加学生</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <spacer name="horizontalSpacer_52">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </item>
   </layout>

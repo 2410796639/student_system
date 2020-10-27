@@ -37,7 +37,7 @@ private:
 public:
     explicit Students(QObject *parent = nullptr);
     //课程情况
-    Course Mycourse[15];
+    Course Mycourse[5];
     //链表连接指针
     Students *next = NULL;
     Students *front = NULL;
@@ -59,7 +59,7 @@ public:
     QString getBirthday();
     int getPride(int count);
     int getPunishment(int count);
-
+    float getAverageGrade();
 signals:
 
 };

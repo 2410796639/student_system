@@ -11,10 +11,10 @@ void Course::setCourse_name(QString other)
     Course_name += other;
 }
 
-//void Course::setCredit(float other)
-//{
-//    Credit = other;
-//}
+void Course::setCredit(int other)
+{
+    Credit = other;
+}
 
 void Course::setGrade(float other)
 {
@@ -26,10 +26,10 @@ QString Course::getCourse_name()
     return Course_name;
 }
 
-//float Course::getCredit()
-//{
-//    return Credit;
-//}
+int Course::getCredit()
+{
+    return Credit;
+}
 
 float Course::getGrade()
 {

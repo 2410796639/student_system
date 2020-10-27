@@ -183,3 +183,71 @@ int Class::getStudents_sum()
 {
     return Students_sum;
 }
+int Class::getStudents_rand(int ID_number1)
+{
+    Students* p1 = start;
+    for(;;)
+    {
+        if(p1->getID_number() == ID_number1)
+        {
+            break;
+        }
+        p1 = p1->next;
+        if(p1 == NULL)
+        {
+            return -1;
+        }
+    }
+    int rand = 1;
+    Students* p2 = start;
+    for(int i=0;i<Students_sum;i++)
+    {
+        if(p2 == p1)
+        {
+            p2 = p2->next;
+            continue;
+        }
+        if(p2->getAverageGrade() > p1->getAverageGrade())
+        {
+            rand++;
+        }
+        p2 = p2->next;
+
+    }
+    return rand;
+
+}
+int Class::getStudents_rand(QString Name1)
+{
+    Students* p1 = start;
+       for(;;)
+       {
+           if(p1->getName() == Name1)
+           {
+               break;
+           }
+           p1 = p1->next;
+           if(p1 == NULL)
+           {
+               return -1;
+           }
+       }
+       int rand = 1;
+       Students* p2 = start;
+       for(int i=0;i<Students_sum;i++)
+       {
+           if(p2 == p1)
+           {
+               p2 = p2->next;
+               continue;
+           }
+           if(p2->getAverageGrade() > p1->getAverageGrade())
+           {
+               rand++;
+           }
+           p2 = p2->next;
+
+       }
+       return rand;
+
+}

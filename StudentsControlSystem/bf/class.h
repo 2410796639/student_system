@@ -32,7 +32,8 @@ public:
     void moveStudents(int ID_number1);
     Students* selectStudents(QString Name1);
     Students* selectStudents(int ID_number1);
-
+    int getStudents_rand(int ID_number1);
+    int getStudents_rand(QString Name1);
 
     int getStudents_sum();
 

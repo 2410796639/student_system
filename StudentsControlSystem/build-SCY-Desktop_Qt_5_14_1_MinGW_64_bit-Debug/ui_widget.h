@@ -14,6 +14,7 @@
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
@@ -97,25 +98,30 @@ public:
     QLabel *label_23;
     QWidget *widget_13;
     QGridLayout *gridLayout_11;
-    QLabel *fifth_name;
     QLabel *label_45;
     QSpacerItem *horizontalSpacer_30;
-    QLabel *label_41;
+    QLabel *fifth_name;
     QSpacerItem *verticalSpacer_13;
-    QSpacerItem *verticalSpacer_9;
-    QLabel *second_name;
     QSpacerItem *verticalSpacer_10;
     QLabel *label_25;
     QSpacerItem *verticalSpacer_11;
-    QSpacerItem *horizontalSpacer_29;
-    QLabel *label_47;
-    QSpacerItem *verticalSpacer_12;
+    QSpacerItem *verticalSpacer_9;
+    QLabel *second_name;
+    QLabel *label_41;
     QSpacerItem *horizontalSpacer_28;
-    QLabel *first_name;
     QLabel *label_43;
+    QSpacerItem *verticalSpacer_12;
+    QLabel *first_name;
+    QLabel *label_47;
+    QSpacerItem *horizontalSpacer_29;
     QLabel *forth_name;
-    QLabel *third_name;
     QSpacerItem *verticalSpacer_14;
+    QLabel *third_name;
+    QLabel *search_credit1;
+    QLabel *search_credit2;
+    QLabel *search_credit3;
+    QLabel *search_credit4;
+    QLabel *search_credit5;
     QWidget *widget_14;
     QHBoxLayout *horizontalLayout_4;
     QSpacerItem *horizontalSpacer_26;
@@ -126,25 +132,27 @@ public:
     QLabel *label_37;
     QWidget *widget_15;
     QGridLayout *gridLayout_12;
-    QLabel *second_score;
-    QSpacerItem *horizontalSpacer_34;
     QSpacerItem *horizontalSpacer_35;
     QLabel *fifth_score;
-    QSpacerItem *horizontalSpacer_33;
     QLabel *first_subject_name_2;
-    QSpacerItem *verticalSpacer_18;
-    QLabel *fifth_subject_name_2;
+    QLabel *second_score;
+    QSpacerItem *horizontalSpacer_33;
+    QSpacerItem *horizontalSpacer_34;
     QLabel *second_subject_name_2;
-    QLabel *third_score;
+    QLabel *fifth_subject_name_2;
     QSpacerItem *verticalSpacer_17;
+    QSpacerItem *verticalSpacer_18;
+    QLabel *third_score;
+    QLabel *first_score;
+    QLabel *third_subject_name_2;
+    QSpacerItem *verticalSpacer_15;
+    QSpacerItem *verticalSpacer_19;
+    QLabel *forth_subject_name_2;
     QLabel *forth_score;
     QSpacerItem *verticalSpacer_16;
-    QLabel *forth_subject_name_2;
-    QLabel *third_subject_name_2;
-    QSpacerItem *verticalSpacer_19;
-    QLabel *first_score;
-    QSpacerItem *verticalSpacer_15;
     QSpacerItem *verticalSpacer_20;
+    QLabel *average_name;
+    QLabel *average_score;
     QWidget *widget_16;
     QHBoxLayout *horizontalLayout_5;
     QSpacerItem *horizontalSpacer_31;
@@ -203,22 +211,29 @@ public:
     QWidget *ControlPage;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_2;
+    QWidget *widget_20;
+    QHBoxLayout *horizontalLayout_7;
+    QSpacerItem *horizontalSpacer_55;
+    QLabel *label_62;
+    QSpacerItem *horizontalSpacer_54;
+    QLCDNumber *lcdNumber;
+    QSpacerItem *horizontalSpacer_56;
     QWidget *widget_3;
     QGridLayout *gridLayout_4;
     QSpacerItem *horizontalSpacer_6;
+    QPushButton *subject_information_manage;
     QSpacerItem *horizontalSpacer_5;
     QSpacerItem *verticalSpacer;
     QPushButton *pride_information_manage;
-    QPushButton *subject_information_manage;
+    QSpacerItem *verticalSpacer_35;
     QPushButton *score_information_manage;
     QPushButton *student_information_manage;
     QSpacerItem *horizontalSpacer_7;
     QSpacerItem *verticalSpacer_2;
-    QSpacerItem *verticalSpacer_35;
     QWidget *widget_5;
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer_14;
-    QPushButton *pushButton_3;
+    QPushButton *add_page;
     QSpacerItem *horizontalSpacer_41;
     QPushButton *delete_page;
     QSpacerItem *horizontalSpacer_36;
@@ -265,63 +280,79 @@ public:
     QLabel *label_12;
     QWidget *widget_8;
     QGridLayout *gridLayout_7;
-    QLineEdit *get_student_name_subject;
-    QLabel *label_13;
-    QSpacerItem *verticalSpacer_50;
-    QLineEdit *third_subject;
-    QLabel *label_15;
-    QSpacerItem *verticalSpacer_51;
-    QPushButton *manage_search_subject;
     QSpacerItem *horizontalSpacer_12;
+    QLineEdit *second_subject;
+    QSpacerItem *horizontalSpacer_15;
+    QLabel *label_13;
+    QLineEdit *get_student_name_subject;
+    QLabel *label_15;
+    QPushButton *manage_search_subject;
+    QSpacerItem *verticalSpacer_50;
     QSpacerItem *verticalSpacer_47;
-    QSpacerItem *verticalSpacer_49;
+    QLineEdit *third_subject;
+    QSpacerItem *verticalSpacer_51;
     QLabel *label_18;
-    QLineEdit *fifth_subject;
     QLabel *label_17;
     QSpacerItem *verticalSpacer_46;
+    QSpacerItem *verticalSpacer_49;
+    QLineEdit *fifth_subject;
+    QLabel *label_14;
+    QPushButton *back_subject;
+    QLabel *label_16;
     QLineEdit *forth_subject;
     QPushButton *manage_alter_subject;
     QSpacerItem *horizontalSpacer_50;
-    QLabel *label_16;
-    QLabel *label_14;
-    QPushButton *back_subject;
-    QLineEdit *second_subject;
-    QSpacerItem *horizontalSpacer_15;
     QLineEdit *first_subject;
-    QPushButton *manage_confirm_subject;
     QSpacerItem *verticalSpacer_48;
+    QPushButton *manage_confirm_subject;
     QSpacerItem *verticalSpacer_52;
+    QLineEdit *credit4;
+    QLineEdit *credit2;
+    QLineEdit *credit3;
+    QLineEdit *credit5;
+    QLabel *label_65;
+    QLabel *label_66;
+    QLabel *label_67;
+    QLabel *label_68;
+    QLabel *label_69;
+    QLineEdit *credit1;
     QWidget *manage_score;
     QVBoxLayout *verticalLayout_7;
     QLabel *label_19;
     QWidget *widget_9;
     QGridLayout *gridLayout_8;
-    QPushButton *manage_search_score;
+    QLineEdit *rank;
+    QLabel *label_63;
+    QLineEdit *average;
+    QLabel *label_64;
     QLineEdit *get_student_name_score;
+    QPushButton *manage_search_score;
     QSpacerItem *horizontalSpacer_51;
-    QLineEdit *forth_subject_score;
-    QPushButton *back_score;
-    QLineEdit *third_subject_score;
-    QSpacerItem *verticalSpacer_54;
     QLineEdit *first_subject_score;
+    QLineEdit *forth_subject_score;
+    QLineEdit *third_subject_score;
     QLabel *first_subject_name;
-    QSpacerItem *verticalSpacer_55;
-    QLabel *third_subject_name;
+    QSpacerItem *verticalSpacer_54;
     QLabel *label_20;
+    QLabel *third_subject_name;
+    QSpacerItem *verticalSpacer_55;
     QSpacerItem *horizontalSpacer_17;
     QLabel *second_subject_name;
-    QPushButton *manage_alter_score;
-    QSpacerItem *horizontalSpacer_20;
-    QSpacerItem *verticalSpacer_53;
+    QSpacerItem *verticalSpacer_57;
     QLineEdit *fifth_subject_score;
     QLabel *fifth_subject_name;
+    QSpacerItem *verticalSpacer_53;
     QPushButton *manage_confirm_score;
-    QSpacerItem *verticalSpacer_57;
-    QSpacerItem *verticalSpacer_58;
-    QLineEdit *second_subject_score;
-    QLabel *forth_subject_name;
-    QSpacerItem *verticalSpacer_56;
+    QPushButton *manage_alter_score;
+    QSpacerItem *horizontalSpacer_20;
     QSpacerItem *verticalSpacer_59;
+    QLabel *forth_subject_name;
+    QLineEdit *second_subject_score;
+    QSpacerItem *verticalSpacer_58;
+    QSpacerItem *verticalSpacer_56;
+    QSpacerItem *verticalSpacer_72;
+    QSpacerItem *verticalSpacer_73;
+    QPushButton *back_score;
     QWidget *manage_pide_punish;
     QVBoxLayout *verticalLayout_8;
     QLabel *label_26;
@@ -386,12 +417,35 @@ public:
     QSpacerItem *verticalSpacer_21;
     QLabel *label_48;
     QWidget *addstudent;
+    QGridLayout *gridLayout_15;
+    QLabel *label_61;
+    QLineEdit *addstudent_gender;
+    QLabel *label_56;
+    QLineEdit *addstudent_birth;
+    QLineEdit *addstudent_name;
+    QLineEdit *addstudent_phone;
+    QLineEdit *addstudent_place;
+    QLabel *label_57;
+    QLabel *label_60;
+    QSpacerItem *verticalSpacer_70;
+    QLabel *label_58;
+    QPushButton *add_back;
+    QSpacerItem *verticalSpacer_71;
+    QSpacerItem *horizontalSpacer_53;
+    QPushButton *add_sure;
+    QSpacerItem *verticalSpacer_77;
+    QSpacerItem *verticalSpacer_76;
+    QSpacerItem *verticalSpacer_75;
+    QSpacerItem *verticalSpacer_79;
+    QSpacerItem *verticalSpacer_78;
+    QLabel *label_55;
+    QSpacerItem *horizontalSpacer_52;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
-        Widget->resize(633, 540);
+        Widget->resize(650, 674);
         gridLayout = new QGridLayout(Widget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         stackedWidget = new QStackedWidget(Widget);
@@ -434,6 +488,7 @@ public:
         ControlTO = new QPushButton(widget);
         ControlTO->setObjectName(QString::fromUtf8("ControlTO"));
         ControlTO->setMinimumSize(QSize(400, 150));
+        ControlTO->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_3->addWidget(ControlTO, 2, 1, 1, 1);
 
@@ -448,6 +503,7 @@ public:
         StudentsTO = new QPushButton(widget);
         StudentsTO->setObjectName(QString::fromUtf8("StudentsTO"));
         StudentsTO->setMinimumSize(QSize(200, 150));
+        StudentsTO->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_3->addWidget(StudentsTO, 0, 1, 1, 1);
 
@@ -490,12 +546,14 @@ public:
         subject_search = new QPushButton(widget_4);
         subject_search->setObjectName(QString::fromUtf8("subject_search"));
         subject_search->setMinimumSize(QSize(0, 50));
+        subject_search->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_5->addWidget(subject_search, 1, 3, 1, 1);
 
         basicinformation = new QPushButton(widget_4);
         basicinformation->setObjectName(QString::fromUtf8("basicinformation"));
         basicinformation->setMinimumSize(QSize(0, 50));
+        basicinformation->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_5->addWidget(basicinformation, 1, 1, 1, 1);
 
@@ -514,12 +572,14 @@ public:
         pride_search = new QPushButton(widget_4);
         pride_search->setObjectName(QString::fromUtf8("pride_search"));
         pride_search->setMinimumSize(QSize(0, 50));
+        pride_search->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_5->addWidget(pride_search, 3, 3, 1, 1);
 
         score_search = new QPushButton(widget_4);
         score_search->setObjectName(QString::fromUtf8("score_search"));
         score_search->setMinimumSize(QSize(0, 50));
+        score_search->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_5->addWidget(score_search, 3, 1, 1, 1);
 
@@ -717,12 +777,6 @@ public:
         widget_13->setObjectName(QString::fromUtf8("widget_13"));
         gridLayout_11 = new QGridLayout(widget_13);
         gridLayout_11->setObjectName(QString::fromUtf8("gridLayout_11"));
-        fifth_name = new QLabel(widget_13);
-        fifth_name->setObjectName(QString::fromUtf8("fifth_name"));
-        fifth_name->setFont(font3);
-
-        gridLayout_11->addWidget(fifth_name, 9, 3, 1, 1);
-
         label_45 = new QLabel(widget_13);
         label_45->setObjectName(QString::fromUtf8("label_45"));
         label_45->setFont(font3);
@@ -733,25 +787,15 @@ public:
 
         gridLayout_11->addItem(horizontalSpacer_30, 1, 2, 1, 1);
 
-        label_41 = new QLabel(widget_13);
-        label_41->setObjectName(QString::fromUtf8("label_41"));
-        label_41->setFont(font3);
+        fifth_name = new QLabel(widget_13);
+        fifth_name->setObjectName(QString::fromUtf8("fifth_name"));
+        fifth_name->setFont(font3);
 
-        gridLayout_11->addWidget(label_41, 3, 1, 1, 1);
+        gridLayout_11->addWidget(fifth_name, 9, 3, 1, 1);
 
         verticalSpacer_13 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout_11->addItem(verticalSpacer_13, 6, 2, 1, 1);
-
-        verticalSpacer_9 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_11->addItem(verticalSpacer_9, 0, 2, 1, 1);
-
-        second_name = new QLabel(widget_13);
-        second_name->setObjectName(QString::fromUtf8("second_name"));
-        second_name->setFont(font3);
-
-        gridLayout_11->addWidget(second_name, 3, 3, 1, 1);
 
         verticalSpacer_10 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -767,29 +811,25 @@ public:
 
         gridLayout_11->addItem(verticalSpacer_11, 4, 2, 1, 1);
 
-        horizontalSpacer_29 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        verticalSpacer_9 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout_11->addItem(horizontalSpacer_29, 1, 4, 1, 1);
+        gridLayout_11->addItem(verticalSpacer_9, 0, 2, 1, 1);
 
-        label_47 = new QLabel(widget_13);
-        label_47->setObjectName(QString::fromUtf8("label_47"));
-        label_47->setFont(font3);
+        second_name = new QLabel(widget_13);
+        second_name->setObjectName(QString::fromUtf8("second_name"));
+        second_name->setFont(font3);
 
-        gridLayout_11->addWidget(label_47, 9, 1, 1, 1);
+        gridLayout_11->addWidget(second_name, 3, 3, 1, 1);
 
-        verticalSpacer_12 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        label_41 = new QLabel(widget_13);
+        label_41->setObjectName(QString::fromUtf8("label_41"));
+        label_41->setFont(font3);
 
-        gridLayout_11->addItem(verticalSpacer_12, 2, 2, 1, 1);
+        gridLayout_11->addWidget(label_41, 3, 1, 1, 1);
 
         horizontalSpacer_28 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_11->addItem(horizontalSpacer_28, 1, 0, 1, 1);
-
-        first_name = new QLabel(widget_13);
-        first_name->setObjectName(QString::fromUtf8("first_name"));
-        first_name->setFont(font3);
-
-        gridLayout_11->addWidget(first_name, 1, 3, 1, 1);
 
         label_43 = new QLabel(widget_13);
         label_43->setObjectName(QString::fromUtf8("label_43"));
@@ -797,11 +837,35 @@ public:
 
         gridLayout_11->addWidget(label_43, 5, 1, 1, 1);
 
+        verticalSpacer_12 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_11->addItem(verticalSpacer_12, 2, 2, 1, 1);
+
+        first_name = new QLabel(widget_13);
+        first_name->setObjectName(QString::fromUtf8("first_name"));
+        first_name->setFont(font3);
+
+        gridLayout_11->addWidget(first_name, 1, 3, 1, 1);
+
+        label_47 = new QLabel(widget_13);
+        label_47->setObjectName(QString::fromUtf8("label_47"));
+        label_47->setFont(font3);
+
+        gridLayout_11->addWidget(label_47, 9, 1, 1, 1);
+
+        horizontalSpacer_29 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_11->addItem(horizontalSpacer_29, 1, 5, 1, 1);
+
         forth_name = new QLabel(widget_13);
         forth_name->setObjectName(QString::fromUtf8("forth_name"));
         forth_name->setFont(font3);
 
         gridLayout_11->addWidget(forth_name, 7, 3, 1, 1);
+
+        verticalSpacer_14 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_11->addItem(verticalSpacer_14, 8, 2, 1, 1);
 
         third_name = new QLabel(widget_13);
         third_name->setObjectName(QString::fromUtf8("third_name"));
@@ -809,9 +873,30 @@ public:
 
         gridLayout_11->addWidget(third_name, 5, 3, 1, 1);
 
-        verticalSpacer_14 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        search_credit1 = new QLabel(widget_13);
+        search_credit1->setObjectName(QString::fromUtf8("search_credit1"));
 
-        gridLayout_11->addItem(verticalSpacer_14, 8, 2, 1, 1);
+        gridLayout_11->addWidget(search_credit1, 1, 4, 1, 1);
+
+        search_credit2 = new QLabel(widget_13);
+        search_credit2->setObjectName(QString::fromUtf8("search_credit2"));
+
+        gridLayout_11->addWidget(search_credit2, 3, 4, 1, 1);
+
+        search_credit3 = new QLabel(widget_13);
+        search_credit3->setObjectName(QString::fromUtf8("search_credit3"));
+
+        gridLayout_11->addWidget(search_credit3, 5, 4, 1, 1);
+
+        search_credit4 = new QLabel(widget_13);
+        search_credit4->setObjectName(QString::fromUtf8("search_credit4"));
+
+        gridLayout_11->addWidget(search_credit4, 7, 4, 1, 1);
+
+        search_credit5 = new QLabel(widget_13);
+        search_credit5->setObjectName(QString::fromUtf8("search_credit5"));
+
+        gridLayout_11->addWidget(search_credit5, 9, 4, 1, 1);
 
 
         verticalLayout_10->addWidget(widget_13);
@@ -854,16 +939,6 @@ public:
         widget_15->setObjectName(QString::fromUtf8("widget_15"));
         gridLayout_12 = new QGridLayout(widget_15);
         gridLayout_12->setObjectName(QString::fromUtf8("gridLayout_12"));
-        second_score = new QLabel(widget_15);
-        second_score->setObjectName(QString::fromUtf8("second_score"));
-        second_score->setFont(font3);
-
-        gridLayout_12->addWidget(second_score, 3, 3, 1, 1);
-
-        horizontalSpacer_34 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_12->addItem(horizontalSpacer_34, 3, 4, 1, 1);
-
         horizontalSpacer_35 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_12->addItem(horizontalSpacer_35, 3, 2, 1, 1);
@@ -874,25 +949,25 @@ public:
 
         gridLayout_12->addWidget(fifth_score, 9, 3, 1, 1);
 
-        horizontalSpacer_33 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_12->addItem(horizontalSpacer_33, 3, 0, 1, 1);
-
         first_subject_name_2 = new QLabel(widget_15);
         first_subject_name_2->setObjectName(QString::fromUtf8("first_subject_name_2"));
         first_subject_name_2->setFont(font3);
 
         gridLayout_12->addWidget(first_subject_name_2, 1, 1, 1, 1);
 
-        verticalSpacer_18 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        second_score = new QLabel(widget_15);
+        second_score->setObjectName(QString::fromUtf8("second_score"));
+        second_score->setFont(font3);
 
-        gridLayout_12->addItem(verticalSpacer_18, 4, 2, 1, 1);
+        gridLayout_12->addWidget(second_score, 3, 3, 1, 1);
 
-        fifth_subject_name_2 = new QLabel(widget_15);
-        fifth_subject_name_2->setObjectName(QString::fromUtf8("fifth_subject_name_2"));
-        fifth_subject_name_2->setFont(font3);
+        horizontalSpacer_33 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        gridLayout_12->addWidget(fifth_subject_name_2, 9, 1, 1, 1);
+        gridLayout_12->addItem(horizontalSpacer_33, 3, 0, 1, 1);
+
+        horizontalSpacer_34 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_12->addItem(horizontalSpacer_34, 3, 4, 1, 1);
 
         second_subject_name_2 = new QLabel(widget_15);
         second_subject_name_2->setObjectName(QString::fromUtf8("second_subject_name_2"));
@@ -900,15 +975,51 @@ public:
 
         gridLayout_12->addWidget(second_subject_name_2, 3, 1, 1, 1);
 
+        fifth_subject_name_2 = new QLabel(widget_15);
+        fifth_subject_name_2->setObjectName(QString::fromUtf8("fifth_subject_name_2"));
+        fifth_subject_name_2->setFont(font3);
+
+        gridLayout_12->addWidget(fifth_subject_name_2, 9, 1, 1, 1);
+
+        verticalSpacer_17 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_12->addItem(verticalSpacer_17, 2, 2, 1, 1);
+
+        verticalSpacer_18 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_12->addItem(verticalSpacer_18, 4, 2, 1, 1);
+
         third_score = new QLabel(widget_15);
         third_score->setObjectName(QString::fromUtf8("third_score"));
         third_score->setFont(font3);
 
         gridLayout_12->addWidget(third_score, 5, 3, 1, 1);
 
-        verticalSpacer_17 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        first_score = new QLabel(widget_15);
+        first_score->setObjectName(QString::fromUtf8("first_score"));
+        first_score->setFont(font3);
 
-        gridLayout_12->addItem(verticalSpacer_17, 2, 2, 1, 1);
+        gridLayout_12->addWidget(first_score, 1, 3, 1, 1);
+
+        third_subject_name_2 = new QLabel(widget_15);
+        third_subject_name_2->setObjectName(QString::fromUtf8("third_subject_name_2"));
+        third_subject_name_2->setFont(font3);
+
+        gridLayout_12->addWidget(third_subject_name_2, 5, 1, 1, 1);
+
+        verticalSpacer_15 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_12->addItem(verticalSpacer_15, 0, 2, 1, 1);
+
+        verticalSpacer_19 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_12->addItem(verticalSpacer_19, 8, 2, 1, 1);
+
+        forth_subject_name_2 = new QLabel(widget_15);
+        forth_subject_name_2->setObjectName(QString::fromUtf8("forth_subject_name_2"));
+        forth_subject_name_2->setFont(font3);
+
+        gridLayout_12->addWidget(forth_subject_name_2, 7, 1, 1, 1);
 
         forth_score = new QLabel(widget_15);
         forth_score->setObjectName(QString::fromUtf8("forth_score"));
@@ -920,35 +1031,21 @@ public:
 
         gridLayout_12->addItem(verticalSpacer_16, 10, 2, 1, 1);
 
-        forth_subject_name_2 = new QLabel(widget_15);
-        forth_subject_name_2->setObjectName(QString::fromUtf8("forth_subject_name_2"));
-        forth_subject_name_2->setFont(font3);
-
-        gridLayout_12->addWidget(forth_subject_name_2, 7, 1, 1, 1);
-
-        third_subject_name_2 = new QLabel(widget_15);
-        third_subject_name_2->setObjectName(QString::fromUtf8("third_subject_name_2"));
-        third_subject_name_2->setFont(font3);
-
-        gridLayout_12->addWidget(third_subject_name_2, 5, 1, 1, 1);
-
-        verticalSpacer_19 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_12->addItem(verticalSpacer_19, 8, 2, 1, 1);
-
-        first_score = new QLabel(widget_15);
-        first_score->setObjectName(QString::fromUtf8("first_score"));
-        first_score->setFont(font3);
-
-        gridLayout_12->addWidget(first_score, 1, 3, 1, 1);
-
-        verticalSpacer_15 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_12->addItem(verticalSpacer_15, 0, 2, 1, 1);
-
         verticalSpacer_20 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout_12->addItem(verticalSpacer_20, 6, 2, 1, 1);
+
+        average_name = new QLabel(widget_15);
+        average_name->setObjectName(QString::fromUtf8("average_name"));
+        average_name->setFont(font3);
+
+        gridLayout_12->addWidget(average_name, 11, 1, 1, 1);
+
+        average_score = new QLabel(widget_15);
+        average_score->setObjectName(QString::fromUtf8("average_score"));
+        average_score->setFont(font3);
+
+        gridLayout_12->addWidget(average_score, 11, 3, 1, 1);
 
 
         verticalLayout_11->addWidget(widget_15);
@@ -1244,6 +1341,37 @@ public:
 
         verticalLayout_2->addWidget(label_2);
 
+        widget_20 = new QWidget(ControlPage);
+        widget_20->setObjectName(QString::fromUtf8("widget_20"));
+        horizontalLayout_7 = new QHBoxLayout(widget_20);
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        horizontalSpacer_55 = new QSpacerItem(20, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_7->addItem(horizontalSpacer_55);
+
+        label_62 = new QLabel(widget_20);
+        label_62->setObjectName(QString::fromUtf8("label_62"));
+        label_62->setStyleSheet(QString::fromUtf8("font: 16pt \"Arial\";"));
+
+        horizontalLayout_7->addWidget(label_62);
+
+        horizontalSpacer_54 = new QSpacerItem(98, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_7->addItem(horizontalSpacer_54);
+
+        lcdNumber = new QLCDNumber(widget_20);
+        lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
+        lcdNumber->setMinimumSize(QSize(150, 0));
+
+        horizontalLayout_7->addWidget(lcdNumber);
+
+        horizontalSpacer_56 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_7->addItem(horizontalSpacer_56);
+
+
+        verticalLayout_2->addWidget(widget_20);
+
         widget_3 = new QWidget(ControlPage);
         widget_3->setObjectName(QString::fromUtf8("widget_3"));
         gridLayout_4 = new QGridLayout(widget_3);
@@ -1251,6 +1379,14 @@ public:
         horizontalSpacer_6 = new QSpacerItem(100, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
         gridLayout_4->addItem(horizontalSpacer_6, 3, 6, 1, 1);
+
+        subject_information_manage = new QPushButton(widget_3);
+        subject_information_manage->setObjectName(QString::fromUtf8("subject_information_manage"));
+        subject_information_manage->setMinimumSize(QSize(0, 50));
+        subject_information_manage->setMaximumSize(QSize(16777215, 50));
+        subject_information_manage->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
+
+        gridLayout_4->addWidget(subject_information_manage, 1, 5, 1, 1);
 
         horizontalSpacer_5 = new QSpacerItem(100, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
@@ -1263,19 +1399,18 @@ public:
         pride_information_manage = new QPushButton(widget_3);
         pride_information_manage->setObjectName(QString::fromUtf8("pride_information_manage"));
         pride_information_manage->setMinimumSize(QSize(0, 50));
+        pride_information_manage->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_4->addWidget(pride_information_manage, 3, 5, 1, 1);
 
-        subject_information_manage = new QPushButton(widget_3);
-        subject_information_manage->setObjectName(QString::fromUtf8("subject_information_manage"));
-        subject_information_manage->setMinimumSize(QSize(0, 50));
-        subject_information_manage->setMaximumSize(QSize(16777215, 50));
+        verticalSpacer_35 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Fixed);
 
-        gridLayout_4->addWidget(subject_information_manage, 1, 5, 1, 1);
+        gridLayout_4->addItem(verticalSpacer_35, 2, 3, 1, 1);
 
         score_information_manage = new QPushButton(widget_3);
         score_information_manage->setObjectName(QString::fromUtf8("score_information_manage"));
         score_information_manage->setMinimumSize(QSize(0, 50));
+        score_information_manage->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_4->addWidget(score_information_manage, 3, 2, 1, 1);
 
@@ -1283,6 +1418,7 @@ public:
         student_information_manage->setObjectName(QString::fromUtf8("student_information_manage"));
         student_information_manage->setMinimumSize(QSize(0, 50));
         student_information_manage->setMaximumSize(QSize(16777215, 50));
+        student_information_manage->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_4->addWidget(student_information_manage, 1, 2, 1, 1);
 
@@ -1293,10 +1429,6 @@ public:
         verticalSpacer_2 = new QSpacerItem(20, 10, QSizePolicy::Minimum, QSizePolicy::Fixed);
 
         gridLayout_4->addItem(verticalSpacer_2, 0, 3, 1, 1);
-
-        verticalSpacer_35 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Fixed);
-
-        gridLayout_4->addItem(verticalSpacer_35, 2, 3, 1, 1);
 
 
         verticalLayout_2->addWidget(widget_3);
@@ -1311,10 +1443,10 @@ public:
 
         horizontalLayout_2->addItem(horizontalSpacer_14);
 
-        pushButton_3 = new QPushButton(widget_5);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        add_page = new QPushButton(widget_5);
+        add_page->setObjectName(QString::fromUtf8("add_page"));
 
-        horizontalLayout_2->addWidget(pushButton_3);
+        horizontalLayout_2->addWidget(add_page);
 
         horizontalSpacer_41 = new QSpacerItem(40, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
@@ -1366,6 +1498,7 @@ public:
         manage_alter_information = new QPushButton(widget_7);
         manage_alter_information->setObjectName(QString::fromUtf8("manage_alter_information"));
         manage_alter_information->setMaximumSize(QSize(16777215, 50));
+        manage_alter_information->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_6->addWidget(manage_alter_information, 3, 6, 1, 1);
 
@@ -1383,6 +1516,7 @@ public:
         manage_confirm_information = new QPushButton(widget_7);
         manage_confirm_information->setObjectName(QString::fromUtf8("manage_confirm_information"));
         manage_confirm_information->setMaximumSize(QSize(16777215, 50));
+        manage_confirm_information->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_6->addWidget(manage_confirm_information, 5, 6, 1, 1);
 
@@ -1501,6 +1635,7 @@ public:
         manage_search_information->setObjectName(QString::fromUtf8("manage_search_information"));
         manage_search_information->setMaximumSize(QSize(100, 50));
         manage_search_information->setSizeIncrement(QSize(100, 0));
+        manage_search_information->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_6->addWidget(manage_search_information, 1, 6, 1, 1);
 
@@ -1560,11 +1695,20 @@ public:
         widget_8->setObjectName(QString::fromUtf8("widget_8"));
         gridLayout_7 = new QGridLayout(widget_8);
         gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
-        get_student_name_subject = new QLineEdit(widget_8);
-        get_student_name_subject->setObjectName(QString::fromUtf8("get_student_name_subject"));
-        get_student_name_subject->setMinimumSize(QSize(0, 50));
+        horizontalSpacer_12 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        gridLayout_7->addWidget(get_student_name_subject, 1, 3, 1, 1);
+        gridLayout_7->addItem(horizontalSpacer_12, 3, 6, 1, 1);
+
+        second_subject = new QLineEdit(widget_8);
+        second_subject->setObjectName(QString::fromUtf8("second_subject"));
+        second_subject->setMinimumSize(QSize(0, 50));
+        second_subject->setMaximumSize(QSize(16777215, 50));
+
+        gridLayout_7->addWidget(second_subject, 5, 3, 1, 1);
+
+        horizontalSpacer_15 = new QSpacerItem(40, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        gridLayout_7->addItem(horizontalSpacer_15, 1, 8, 1, 1);
 
         label_13 = new QLabel(widget_8);
         label_13->setObjectName(QString::fromUtf8("label_13"));
@@ -1574,9 +1718,31 @@ public:
 
         gridLayout_7->addWidget(label_13, 1, 1, 1, 1);
 
+        get_student_name_subject = new QLineEdit(widget_8);
+        get_student_name_subject->setObjectName(QString::fromUtf8("get_student_name_subject"));
+        get_student_name_subject->setMinimumSize(QSize(0, 50));
+
+        gridLayout_7->addWidget(get_student_name_subject, 1, 3, 1, 1);
+
+        label_15 = new QLabel(widget_8);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+        label_15->setFont(font5);
+
+        gridLayout_7->addWidget(label_15, 5, 1, 1, 1);
+
+        manage_search_subject = new QPushButton(widget_8);
+        manage_search_subject->setObjectName(QString::fromUtf8("manage_search_subject"));
+        manage_search_subject->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
+
+        gridLayout_7->addWidget(manage_search_subject, 1, 7, 1, 1);
+
         verticalSpacer_50 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout_7->addItem(verticalSpacer_50, 10, 1, 1, 1);
+
+        verticalSpacer_47 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_7->addItem(verticalSpacer_47, 4, 1, 1, 1);
 
         third_subject = new QLineEdit(widget_8);
         third_subject->setObjectName(QString::fromUtf8("third_subject"));
@@ -1585,32 +1751,9 @@ public:
 
         gridLayout_7->addWidget(third_subject, 7, 3, 1, 1);
 
-        label_15 = new QLabel(widget_8);
-        label_15->setObjectName(QString::fromUtf8("label_15"));
-        label_15->setFont(font5);
-
-        gridLayout_7->addWidget(label_15, 5, 1, 1, 1);
-
         verticalSpacer_51 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout_7->addItem(verticalSpacer_51, 12, 1, 1, 1);
-
-        manage_search_subject = new QPushButton(widget_8);
-        manage_search_subject->setObjectName(QString::fromUtf8("manage_search_subject"));
-
-        gridLayout_7->addWidget(manage_search_subject, 1, 5, 1, 1);
-
-        horizontalSpacer_12 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_7->addItem(horizontalSpacer_12, 1, 4, 1, 1);
-
-        verticalSpacer_47 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_7->addItem(verticalSpacer_47, 4, 1, 1, 1);
-
-        verticalSpacer_49 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_7->addItem(verticalSpacer_49, 8, 1, 1, 1);
 
         label_18 = new QLabel(widget_8);
         label_18->setObjectName(QString::fromUtf8("label_18"));
@@ -1619,13 +1762,6 @@ public:
         label_18->setFont(font5);
 
         gridLayout_7->addWidget(label_18, 11, 1, 1, 1);
-
-        fifth_subject = new QLineEdit(widget_8);
-        fifth_subject->setObjectName(QString::fromUtf8("fifth_subject"));
-        fifth_subject->setMinimumSize(QSize(0, 50));
-        fifth_subject->setMaximumSize(QSize(16777215, 50));
-
-        gridLayout_7->addWidget(fifth_subject, 11, 3, 1, 1);
 
         label_17 = new QLabel(widget_8);
         label_17->setObjectName(QString::fromUtf8("label_17"));
@@ -1637,27 +1773,16 @@ public:
 
         gridLayout_7->addItem(verticalSpacer_46, 2, 1, 1, 1);
 
-        forth_subject = new QLineEdit(widget_8);
-        forth_subject->setObjectName(QString::fromUtf8("forth_subject"));
-        forth_subject->setMinimumSize(QSize(0, 50));
-        forth_subject->setMaximumSize(QSize(16777215, 50));
+        verticalSpacer_49 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout_7->addWidget(forth_subject, 9, 3, 1, 1);
+        gridLayout_7->addItem(verticalSpacer_49, 8, 1, 1, 1);
 
-        manage_alter_subject = new QPushButton(widget_8);
-        manage_alter_subject->setObjectName(QString::fromUtf8("manage_alter_subject"));
+        fifth_subject = new QLineEdit(widget_8);
+        fifth_subject->setObjectName(QString::fromUtf8("fifth_subject"));
+        fifth_subject->setMinimumSize(QSize(0, 50));
+        fifth_subject->setMaximumSize(QSize(16777215, 50));
 
-        gridLayout_7->addWidget(manage_alter_subject, 3, 5, 1, 1);
-
-        horizontalSpacer_50 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_7->addItem(horizontalSpacer_50, 1, 0, 1, 1);
-
-        label_16 = new QLabel(widget_8);
-        label_16->setObjectName(QString::fromUtf8("label_16"));
-        label_16->setFont(font5);
-
-        gridLayout_7->addWidget(label_16, 7, 1, 1, 1);
+        gridLayout_7->addWidget(fifth_subject, 11, 3, 1, 1);
 
         label_14 = new QLabel(widget_8);
         label_14->setObjectName(QString::fromUtf8("label_14"));
@@ -1670,18 +1795,30 @@ public:
         back_subject = new QPushButton(widget_8);
         back_subject->setObjectName(QString::fromUtf8("back_subject"));
 
-        gridLayout_7->addWidget(back_subject, 11, 5, 1, 1);
+        gridLayout_7->addWidget(back_subject, 11, 7, 1, 1);
 
-        second_subject = new QLineEdit(widget_8);
-        second_subject->setObjectName(QString::fromUtf8("second_subject"));
-        second_subject->setMinimumSize(QSize(0, 50));
-        second_subject->setMaximumSize(QSize(16777215, 50));
+        label_16 = new QLabel(widget_8);
+        label_16->setObjectName(QString::fromUtf8("label_16"));
+        label_16->setFont(font5);
 
-        gridLayout_7->addWidget(second_subject, 5, 3, 1, 1);
+        gridLayout_7->addWidget(label_16, 7, 1, 1, 1);
 
-        horizontalSpacer_15 = new QSpacerItem(40, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+        forth_subject = new QLineEdit(widget_8);
+        forth_subject->setObjectName(QString::fromUtf8("forth_subject"));
+        forth_subject->setMinimumSize(QSize(0, 50));
+        forth_subject->setMaximumSize(QSize(16777215, 50));
 
-        gridLayout_7->addItem(horizontalSpacer_15, 1, 6, 1, 1);
+        gridLayout_7->addWidget(forth_subject, 9, 3, 1, 1);
+
+        manage_alter_subject = new QPushButton(widget_8);
+        manage_alter_subject->setObjectName(QString::fromUtf8("manage_alter_subject"));
+        manage_alter_subject->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
+
+        gridLayout_7->addWidget(manage_alter_subject, 3, 7, 1, 1);
+
+        horizontalSpacer_50 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_7->addItem(horizontalSpacer_50, 1, 0, 1, 1);
 
         first_subject = new QLineEdit(widget_8);
         first_subject->setObjectName(QString::fromUtf8("first_subject"));
@@ -1689,18 +1826,89 @@ public:
 
         gridLayout_7->addWidget(first_subject, 3, 3, 1, 1);
 
-        manage_confirm_subject = new QPushButton(widget_8);
-        manage_confirm_subject->setObjectName(QString::fromUtf8("manage_confirm_subject"));
-
-        gridLayout_7->addWidget(manage_confirm_subject, 5, 5, 1, 1);
-
         verticalSpacer_48 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout_7->addItem(verticalSpacer_48, 6, 1, 1, 1);
 
+        manage_confirm_subject = new QPushButton(widget_8);
+        manage_confirm_subject->setObjectName(QString::fromUtf8("manage_confirm_subject"));
+        manage_confirm_subject->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
+
+        gridLayout_7->addWidget(manage_confirm_subject, 5, 7, 1, 1);
+
         verticalSpacer_52 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout_7->addItem(verticalSpacer_52, 0, 1, 1, 1);
+
+        credit4 = new QLineEdit(widget_8);
+        credit4->setObjectName(QString::fromUtf8("credit4"));
+        credit4->setMinimumSize(QSize(0, 50));
+        credit4->setMaximumSize(QSize(50, 50));
+
+        gridLayout_7->addWidget(credit4, 9, 4, 1, 1);
+
+        credit2 = new QLineEdit(widget_8);
+        credit2->setObjectName(QString::fromUtf8("credit2"));
+        credit2->setMinimumSize(QSize(0, 50));
+        credit2->setMaximumSize(QSize(50, 50));
+
+        gridLayout_7->addWidget(credit2, 5, 4, 1, 1);
+
+        credit3 = new QLineEdit(widget_8);
+        credit3->setObjectName(QString::fromUtf8("credit3"));
+        credit3->setMinimumSize(QSize(0, 50));
+        credit3->setMaximumSize(QSize(50, 50));
+
+        gridLayout_7->addWidget(credit3, 7, 4, 1, 1);
+
+        credit5 = new QLineEdit(widget_8);
+        credit5->setObjectName(QString::fromUtf8("credit5"));
+        credit5->setMinimumSize(QSize(0, 50));
+        credit5->setMaximumSize(QSize(50, 50));
+
+        gridLayout_7->addWidget(credit5, 11, 4, 1, 1);
+
+        label_65 = new QLabel(widget_8);
+        label_65->setObjectName(QString::fromUtf8("label_65"));
+        label_65->setMinimumSize(QSize(30, 0));
+        label_65->setMaximumSize(QSize(30, 16777215));
+
+        gridLayout_7->addWidget(label_65, 3, 5, 1, 1);
+
+        label_66 = new QLabel(widget_8);
+        label_66->setObjectName(QString::fromUtf8("label_66"));
+        label_66->setMinimumSize(QSize(30, 0));
+        label_66->setMaximumSize(QSize(30, 16777215));
+
+        gridLayout_7->addWidget(label_66, 5, 5, 1, 1);
+
+        label_67 = new QLabel(widget_8);
+        label_67->setObjectName(QString::fromUtf8("label_67"));
+        label_67->setMinimumSize(QSize(30, 0));
+        label_67->setMaximumSize(QSize(30, 30));
+
+        gridLayout_7->addWidget(label_67, 7, 5, 1, 1);
+
+        label_68 = new QLabel(widget_8);
+        label_68->setObjectName(QString::fromUtf8("label_68"));
+        label_68->setMinimumSize(QSize(30, 0));
+        label_68->setMaximumSize(QSize(30, 16777215));
+
+        gridLayout_7->addWidget(label_68, 9, 5, 1, 1);
+
+        label_69 = new QLabel(widget_8);
+        label_69->setObjectName(QString::fromUtf8("label_69"));
+        label_69->setMinimumSize(QSize(30, 0));
+        label_69->setMaximumSize(QSize(30, 16777215));
+
+        gridLayout_7->addWidget(label_69, 11, 5, 1, 1);
+
+        credit1 = new QLineEdit(widget_8);
+        credit1->setObjectName(QString::fromUtf8("credit1"));
+        credit1->setMinimumSize(QSize(0, 50));
+        credit1->setMaximumSize(QSize(50, 50));
+
+        gridLayout_7->addWidget(credit1, 3, 4, 1, 1);
 
 
         verticalLayout_6->addWidget(widget_8);
@@ -1722,11 +1930,34 @@ public:
         widget_9->setObjectName(QString::fromUtf8("widget_9"));
         gridLayout_8 = new QGridLayout(widget_9);
         gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
-        manage_search_score = new QPushButton(widget_9);
-        manage_search_score->setObjectName(QString::fromUtf8("manage_search_score"));
-        manage_search_score->setMinimumSize(QSize(0, 50));
+        rank = new QLineEdit(widget_9);
+        rank->setObjectName(QString::fromUtf8("rank"));
+        rank->setMinimumSize(QSize(0, 50));
+        rank->setMaximumSize(QSize(16777215, 50));
 
-        gridLayout_8->addWidget(manage_search_score, 1, 4, 1, 1);
+        gridLayout_8->addWidget(rank, 15, 2, 1, 1);
+
+        label_63 = new QLabel(widget_9);
+        label_63->setObjectName(QString::fromUtf8("label_63"));
+        label_63->setFont(font5);
+
+        gridLayout_8->addWidget(label_63, 13, 1, 1, 1);
+
+        average = new QLineEdit(widget_9);
+        average->setObjectName(QString::fromUtf8("average"));
+        average->setMinimumSize(QSize(0, 50));
+        average->setMaximumSize(QSize(16777215, 50));
+        QFont font6;
+        font6.setPointSize(9);
+        average->setFont(font6);
+
+        gridLayout_8->addWidget(average, 13, 2, 1, 1);
+
+        label_64 = new QLabel(widget_9);
+        label_64->setObjectName(QString::fromUtf8("label_64"));
+        label_64->setFont(font5);
+
+        gridLayout_8->addWidget(label_64, 15, 1, 1, 1);
 
         get_student_name_score = new QLineEdit(widget_9);
         get_student_name_score->setObjectName(QString::fromUtf8("get_student_name_score"));
@@ -1735,33 +1966,16 @@ public:
 
         gridLayout_8->addWidget(get_student_name_score, 1, 2, 1, 1);
 
+        manage_search_score = new QPushButton(widget_9);
+        manage_search_score->setObjectName(QString::fromUtf8("manage_search_score"));
+        manage_search_score->setMinimumSize(QSize(0, 50));
+        manage_search_score->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
+
+        gridLayout_8->addWidget(manage_search_score, 1, 4, 1, 1);
+
         horizontalSpacer_51 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_8->addItem(horizontalSpacer_51, 1, 0, 1, 1);
-
-        forth_subject_score = new QLineEdit(widget_9);
-        forth_subject_score->setObjectName(QString::fromUtf8("forth_subject_score"));
-        forth_subject_score->setMinimumSize(QSize(0, 50));
-        forth_subject_score->setMaximumSize(QSize(16777215, 50));
-
-        gridLayout_8->addWidget(forth_subject_score, 9, 2, 1, 1);
-
-        back_score = new QPushButton(widget_9);
-        back_score->setObjectName(QString::fromUtf8("back_score"));
-        back_score->setMinimumSize(QSize(0, 50));
-
-        gridLayout_8->addWidget(back_score, 11, 4, 1, 1);
-
-        third_subject_score = new QLineEdit(widget_9);
-        third_subject_score->setObjectName(QString::fromUtf8("third_subject_score"));
-        third_subject_score->setMinimumSize(QSize(0, 50));
-        third_subject_score->setMaximumSize(QSize(16777215, 50));
-
-        gridLayout_8->addWidget(third_subject_score, 7, 2, 1, 1);
-
-        verticalSpacer_54 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_8->addItem(verticalSpacer_54, 0, 1, 1, 1);
 
         first_subject_score = new QLineEdit(widget_9);
         first_subject_score->setObjectName(QString::fromUtf8("first_subject_score"));
@@ -1770,15 +1984,35 @@ public:
 
         gridLayout_8->addWidget(first_subject_score, 3, 2, 1, 1);
 
+        forth_subject_score = new QLineEdit(widget_9);
+        forth_subject_score->setObjectName(QString::fromUtf8("forth_subject_score"));
+        forth_subject_score->setMinimumSize(QSize(0, 50));
+        forth_subject_score->setMaximumSize(QSize(16777215, 50));
+
+        gridLayout_8->addWidget(forth_subject_score, 9, 2, 1, 1);
+
+        third_subject_score = new QLineEdit(widget_9);
+        third_subject_score->setObjectName(QString::fromUtf8("third_subject_score"));
+        third_subject_score->setMinimumSize(QSize(0, 50));
+        third_subject_score->setMaximumSize(QSize(16777215, 50));
+
+        gridLayout_8->addWidget(third_subject_score, 7, 2, 1, 1);
+
         first_subject_name = new QLabel(widget_9);
         first_subject_name->setObjectName(QString::fromUtf8("first_subject_name"));
         first_subject_name->setFont(font5);
 
         gridLayout_8->addWidget(first_subject_name, 3, 1, 1, 1);
 
-        verticalSpacer_55 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer_54 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout_8->addItem(verticalSpacer_55, 4, 1, 1, 1);
+        gridLayout_8->addItem(verticalSpacer_54, 0, 1, 1, 1);
+
+        label_20 = new QLabel(widget_9);
+        label_20->setObjectName(QString::fromUtf8("label_20"));
+        label_20->setFont(font5);
+
+        gridLayout_8->addWidget(label_20, 1, 1, 1, 1);
 
         third_subject_name = new QLabel(widget_9);
         third_subject_name->setObjectName(QString::fromUtf8("third_subject_name"));
@@ -1786,11 +2020,9 @@ public:
 
         gridLayout_8->addWidget(third_subject_name, 7, 1, 1, 1);
 
-        label_20 = new QLabel(widget_9);
-        label_20->setObjectName(QString::fromUtf8("label_20"));
-        label_20->setFont(font5);
+        verticalSpacer_55 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout_8->addWidget(label_20, 1, 1, 1, 1);
+        gridLayout_8->addItem(verticalSpacer_55, 4, 1, 1, 1);
 
         horizontalSpacer_17 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -1802,19 +2034,9 @@ public:
 
         gridLayout_8->addWidget(second_subject_name, 5, 1, 1, 1);
 
-        manage_alter_score = new QPushButton(widget_9);
-        manage_alter_score->setObjectName(QString::fromUtf8("manage_alter_score"));
-        manage_alter_score->setMinimumSize(QSize(0, 50));
+        verticalSpacer_57 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout_8->addWidget(manage_alter_score, 3, 4, 1, 1);
-
-        horizontalSpacer_20 = new QSpacerItem(40, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        gridLayout_8->addItem(horizontalSpacer_20, 1, 6, 1, 1);
-
-        verticalSpacer_53 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_8->addItem(verticalSpacer_53, 2, 1, 1, 1);
+        gridLayout_8->addItem(verticalSpacer_57, 8, 1, 1, 1);
 
         fifth_subject_score = new QLineEdit(widget_9);
         fifth_subject_score->setObjectName(QString::fromUtf8("fifth_subject_score"));
@@ -1829,19 +2051,37 @@ public:
 
         gridLayout_8->addWidget(fifth_subject_name, 11, 1, 1, 1);
 
+        verticalSpacer_53 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_8->addItem(verticalSpacer_53, 2, 1, 1, 1);
+
         manage_confirm_score = new QPushButton(widget_9);
         manage_confirm_score->setObjectName(QString::fromUtf8("manage_confirm_score"));
         manage_confirm_score->setMinimumSize(QSize(0, 50));
+        manage_confirm_score->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_8->addWidget(manage_confirm_score, 5, 4, 1, 1);
 
-        verticalSpacer_57 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        manage_alter_score = new QPushButton(widget_9);
+        manage_alter_score->setObjectName(QString::fromUtf8("manage_alter_score"));
+        manage_alter_score->setMinimumSize(QSize(0, 50));
+        manage_alter_score->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
-        gridLayout_8->addItem(verticalSpacer_57, 8, 1, 1, 1);
+        gridLayout_8->addWidget(manage_alter_score, 3, 4, 1, 1);
 
-        verticalSpacer_58 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        horizontalSpacer_20 = new QSpacerItem(40, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
-        gridLayout_8->addItem(verticalSpacer_58, 10, 1, 1, 1);
+        gridLayout_8->addItem(horizontalSpacer_20, 1, 6, 1, 1);
+
+        verticalSpacer_59 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_8->addItem(verticalSpacer_59, 12, 1, 1, 1);
+
+        forth_subject_name = new QLabel(widget_9);
+        forth_subject_name->setObjectName(QString::fromUtf8("forth_subject_name"));
+        forth_subject_name->setFont(font5);
+
+        gridLayout_8->addWidget(forth_subject_name, 9, 1, 1, 1);
 
         second_subject_score = new QLineEdit(widget_9);
         second_subject_score->setObjectName(QString::fromUtf8("second_subject_score"));
@@ -1850,19 +2090,27 @@ public:
 
         gridLayout_8->addWidget(second_subject_score, 5, 2, 1, 1);
 
-        forth_subject_name = new QLabel(widget_9);
-        forth_subject_name->setObjectName(QString::fromUtf8("forth_subject_name"));
-        forth_subject_name->setFont(font5);
+        verticalSpacer_58 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout_8->addWidget(forth_subject_name, 9, 1, 1, 1);
+        gridLayout_8->addItem(verticalSpacer_58, 10, 1, 1, 1);
 
         verticalSpacer_56 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout_8->addItem(verticalSpacer_56, 6, 1, 1, 1);
 
-        verticalSpacer_59 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer_72 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout_8->addItem(verticalSpacer_59, 12, 1, 1, 1);
+        gridLayout_8->addItem(verticalSpacer_72, 16, 1, 1, 1);
+
+        verticalSpacer_73 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_8->addItem(verticalSpacer_73, 14, 1, 1, 1);
+
+        back_score = new QPushButton(widget_9);
+        back_score->setObjectName(QString::fromUtf8("back_score"));
+        back_score->setMinimumSize(QSize(0, 50));
+
+        gridLayout_8->addWidget(back_score, 15, 4, 1, 1);
 
 
         verticalLayout_7->addWidget(widget_9);
@@ -1892,6 +2140,7 @@ public:
 
         manage_alter_rewardsandpunishment = new QPushButton(widget_10);
         manage_alter_rewardsandpunishment->setObjectName(QString::fromUtf8("manage_alter_rewardsandpunishment"));
+        manage_alter_rewardsandpunishment->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_9->addWidget(manage_alter_rewardsandpunishment, 3, 6, 1, 1);
 
@@ -1907,6 +2156,7 @@ public:
 
         manage_search_rewardsandpunishment = new QPushButton(widget_10);
         manage_search_rewardsandpunishment->setObjectName(QString::fromUtf8("manage_search_rewardsandpunishment"));
+        manage_search_rewardsandpunishment->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_9->addWidget(manage_search_rewardsandpunishment, 1, 6, 1, 1);
 
@@ -1962,6 +2212,7 @@ public:
 
         manage_confirm_rewardsandpunishment = new QPushButton(widget_10);
         manage_confirm_rewardsandpunishment->setObjectName(QString::fromUtf8("manage_confirm_rewardsandpunishment"));
+        manage_confirm_rewardsandpunishment->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_9->addWidget(manage_confirm_rewardsandpunishment, 5, 6, 1, 1);
 
@@ -2139,6 +2390,7 @@ public:
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setMinimumSize(QSize(0, 50));
         pushButton->setMaximumSize(QSize(16777215, 50));
+        pushButton->setStyleSheet(QString::fromUtf8("border-image:url(\"../image/button.jpg\")"));
 
         gridLayout_14->addWidget(pushButton, 3, 2, 1, 1);
 
@@ -2170,9 +2422,9 @@ public:
 
         label_48 = new QLabel(widget_18);
         label_48->setObjectName(QString::fromUtf8("label_48"));
-        QFont font6;
-        font6.setPointSize(12);
-        label_48->setFont(font6);
+        QFont font7;
+        font7.setPointSize(12);
+        label_48->setFont(font7);
 
         gridLayout_14->addWidget(label_48, 1, 1, 1, 1);
 
@@ -2182,6 +2434,138 @@ public:
         stackedWidget->addWidget(delete_2);
         addstudent = new QWidget();
         addstudent->setObjectName(QString::fromUtf8("addstudent"));
+        gridLayout_15 = new QGridLayout(addstudent);
+        gridLayout_15->setObjectName(QString::fromUtf8("gridLayout_15"));
+        label_61 = new QLabel(addstudent);
+        label_61->setObjectName(QString::fromUtf8("label_61"));
+        label_61->setStyleSheet(QString::fromUtf8("font: 11pt \"Arial\";"));
+
+        gridLayout_15->addWidget(label_61, 10, 1, 1, 1);
+
+        addstudent_gender = new QLineEdit(addstudent);
+        addstudent_gender->setObjectName(QString::fromUtf8("addstudent_gender"));
+
+        gridLayout_15->addWidget(addstudent_gender, 6, 2, 1, 1);
+
+        label_56 = new QLabel(addstudent);
+        label_56->setObjectName(QString::fromUtf8("label_56"));
+        QFont font8;
+        font8.setFamily(QString::fromUtf8("Arial"));
+        font8.setPointSize(11);
+        font8.setBold(false);
+        font8.setItalic(false);
+        font8.setWeight(50);
+        label_56->setFont(font8);
+        label_56->setStyleSheet(QString::fromUtf8("font: 11pt \"Arial\";"));
+
+        gridLayout_15->addWidget(label_56, 2, 1, 1, 1);
+
+        addstudent_birth = new QLineEdit(addstudent);
+        addstudent_birth->setObjectName(QString::fromUtf8("addstudent_birth"));
+
+        gridLayout_15->addWidget(addstudent_birth, 10, 2, 1, 1);
+
+        addstudent_name = new QLineEdit(addstudent);
+        addstudent_name->setObjectName(QString::fromUtf8("addstudent_name"));
+
+        gridLayout_15->addWidget(addstudent_name, 2, 2, 1, 1);
+
+        addstudent_phone = new QLineEdit(addstudent);
+        addstudent_phone->setObjectName(QString::fromUtf8("addstudent_phone"));
+
+        gridLayout_15->addWidget(addstudent_phone, 4, 2, 1, 1);
+
+        addstudent_place = new QLineEdit(addstudent);
+        addstudent_place->setObjectName(QString::fromUtf8("addstudent_place"));
+
+        gridLayout_15->addWidget(addstudent_place, 8, 2, 1, 1);
+
+        label_57 = new QLabel(addstudent);
+        label_57->setObjectName(QString::fromUtf8("label_57"));
+        label_57->setStyleSheet(QString::fromUtf8("font: 11pt \"Arial\";"));
+
+        gridLayout_15->addWidget(label_57, 4, 1, 1, 1);
+
+        label_60 = new QLabel(addstudent);
+        label_60->setObjectName(QString::fromUtf8("label_60"));
+        label_60->setStyleSheet(QString::fromUtf8("font: 11pt \"Arial\";"));
+
+        gridLayout_15->addWidget(label_60, 8, 1, 1, 1);
+
+        verticalSpacer_70 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_15->addItem(verticalSpacer_70, 13, 1, 1, 1);
+
+        label_58 = new QLabel(addstudent);
+        label_58->setObjectName(QString::fromUtf8("label_58"));
+        label_58->setStyleSheet(QString::fromUtf8("font: 11pt \"Arial\";"));
+
+        gridLayout_15->addWidget(label_58, 6, 1, 1, 1);
+
+        add_back = new QPushButton(addstudent);
+        add_back->setObjectName(QString::fromUtf8("add_back"));
+        add_back->setMinimumSize(QSize(100, 0));
+        add_back->setMaximumSize(QSize(100, 16777215));
+
+        gridLayout_15->addWidget(add_back, 12, 2, 1, 1);
+
+        verticalSpacer_71 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_15->addItem(verticalSpacer_71, 11, 1, 1, 1);
+
+        horizontalSpacer_53 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_15->addItem(horizontalSpacer_53, 2, 0, 1, 1);
+
+        add_sure = new QPushButton(addstudent);
+        add_sure->setObjectName(QString::fromUtf8("add_sure"));
+        add_sure->setMinimumSize(QSize(100, 0));
+        add_sure->setMaximumSize(QSize(100, 16777215));
+
+        gridLayout_15->addWidget(add_sure, 12, 1, 1, 1);
+
+        verticalSpacer_77 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_15->addItem(verticalSpacer_77, 5, 1, 1, 1);
+
+        verticalSpacer_76 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_15->addItem(verticalSpacer_76, 7, 1, 1, 1);
+
+        verticalSpacer_75 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_15->addItem(verticalSpacer_75, 9, 1, 1, 1);
+
+        verticalSpacer_79 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_15->addItem(verticalSpacer_79, 1, 1, 1, 1);
+
+        verticalSpacer_78 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_15->addItem(verticalSpacer_78, 3, 1, 1, 1);
+
+        label_55 = new QLabel(addstudent);
+        label_55->setObjectName(QString::fromUtf8("label_55"));
+        label_55->setMinimumSize(QSize(0, 70));
+        label_55->setMaximumSize(QSize(16777215, 70));
+        QFont font9;
+        font9.setFamily(QString::fromUtf8("Arial"));
+        font9.setPointSize(18);
+        font9.setBold(false);
+        font9.setItalic(false);
+        font9.setWeight(50);
+        label_55->setFont(font9);
+        label_55->setStyleSheet(QString::fromUtf8("font: 28pt \"Arial\";\n"
+"font: 9pt \"\346\245\267\344\275\223\";\n"
+"font: 18pt \"Arial\";"));
+        label_55->setAlignment(Qt::AlignCenter);
+
+        gridLayout_15->addWidget(label_55, 0, 0, 1, 4);
+
+        horizontalSpacer_52 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_15->addItem(horizontalSpacer_52, 2, 3, 1, 1);
+
         stackedWidget->addWidget(addstudent);
 
         gridLayout->addWidget(stackedWidget, 0, 0, 1, 1);
@@ -2219,28 +2603,35 @@ public:
         student_gender->setText(QCoreApplication::translate("Widget", "\346\200\247\345\210\253", nullptr));
         back_student_information->setText(QCoreApplication::translate("Widget", "\350\277\224\345\233\236", nullptr));
         label_23->setText(QCoreApplication::translate("Widget", "\350\257\276\347\250\213\344\277\241\346\201\257", nullptr));
-        fifth_name->setText(QCoreApplication::translate("Widget", "fifth_name", nullptr));
         label_45->setText(QCoreApplication::translate("Widget", "\347\254\254\345\233\233\351\227\250\350\257\276\357\274\232", nullptr));
-        label_41->setText(QCoreApplication::translate("Widget", "\347\254\254\344\272\214\351\227\250\350\257\276\357\274\232", nullptr));
-        second_name->setText(QCoreApplication::translate("Widget", "second_name", nullptr));
+        fifth_name->setText(QCoreApplication::translate("Widget", "fifth_name", nullptr));
         label_25->setText(QCoreApplication::translate("Widget", "\347\254\254\344\270\200\351\227\250\350\257\276\357\274\232", nullptr));
-        label_47->setText(QCoreApplication::translate("Widget", "\347\254\254\344\272\224\351\227\250\350\257\276\357\274\232", nullptr));
-        first_name->setText(QCoreApplication::translate("Widget", "first_name", nullptr));
+        second_name->setText(QCoreApplication::translate("Widget", "second_name", nullptr));
+        label_41->setText(QCoreApplication::translate("Widget", "\347\254\254\344\272\214\351\227\250\350\257\276\357\274\232", nullptr));
         label_43->setText(QCoreApplication::translate("Widget", "\347\254\254\344\270\211\351\227\250\350\257\276\357\274\232", nullptr));
+        first_name->setText(QCoreApplication::translate("Widget", "first_name", nullptr));
+        label_47->setText(QCoreApplication::translate("Widget", "\347\254\254\344\272\224\351\227\250\350\257\276\357\274\232", nullptr));
         forth_name->setText(QCoreApplication::translate("Widget", "forth_name", nullptr));
         third_name->setText(QCoreApplication::translate("Widget", "third_name", nullptr));
+        search_credit1->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
+        search_credit2->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
+        search_credit3->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
+        search_credit4->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
+        search_credit5->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
         back_student_subject->setText(QCoreApplication::translate("Widget", "\350\277\224\345\233\236", nullptr));
         label_37->setText(QCoreApplication::translate("Widget", "\346\210\220\347\273\251\344\277\241\346\201\257", nullptr));
-        second_score->setText(QCoreApplication::translate("Widget", "second_score", nullptr));
         fifth_score->setText(QCoreApplication::translate("Widget", "fifth_score", nullptr));
         first_subject_name_2->setText(QCoreApplication::translate("Widget", "first_subject", nullptr));
-        fifth_subject_name_2->setText(QCoreApplication::translate("Widget", "fifth_subject", nullptr));
+        second_score->setText(QCoreApplication::translate("Widget", "second_score", nullptr));
         second_subject_name_2->setText(QCoreApplication::translate("Widget", "second_subject", nullptr));
+        fifth_subject_name_2->setText(QCoreApplication::translate("Widget", "fifth_subject", nullptr));
         third_score->setText(QCoreApplication::translate("Widget", "third_score", nullptr));
-        forth_score->setText(QCoreApplication::translate("Widget", "forth_score", nullptr));
-        forth_subject_name_2->setText(QCoreApplication::translate("Widget", "forth_subject", nullptr));
-        third_subject_name_2->setText(QCoreApplication::translate("Widget", "third_subject", nullptr));
         first_score->setText(QCoreApplication::translate("Widget", "first_score", nullptr));
+        third_subject_name_2->setText(QCoreApplication::translate("Widget", "third_subject", nullptr));
+        forth_subject_name_2->setText(QCoreApplication::translate("Widget", "forth_subject", nullptr));
+        forth_score->setText(QCoreApplication::translate("Widget", "forth_score", nullptr));
+        average_name->setText(QCoreApplication::translate("Widget", "\345\271\263\345\235\207\345\210\206\357\274\232", nullptr));
+        average_score->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
         back_student_score->setText(QCoreApplication::translate("Widget", "\350\277\224\345\233\236", nullptr));
         label_42->setText(QCoreApplication::translate("Widget", "\345\245\226\346\203\251\344\277\241\346\201\257", nullptr));
         student_reward6->setText(QString());
@@ -2271,11 +2662,12 @@ public:
         label_49->setText(QCoreApplication::translate("Widget", "\347\254\254\344\272\214\345\255\246\346\234\237", nullptr));
         back_rewardsandpunish->setText(QCoreApplication::translate("Widget", "\350\277\224\345\233\236", nullptr));
         label_2->setText(QCoreApplication::translate("Widget", "\347\256\241\347\220\206\345\221\230\347\253\257", nullptr));
-        pride_information_manage->setText(QCoreApplication::translate("Widget", "\345\245\226\346\203\251\344\277\241\346\201\257\347\256\241\347\220\206", nullptr));
+        label_62->setText(QCoreApplication::translate("Widget", "\345\275\223\345\211\215\347\217\255\347\272\247\344\272\272\346\225\260\357\274\232", nullptr));
         subject_information_manage->setText(QCoreApplication::translate("Widget", "\350\257\276\347\250\213\344\277\241\346\201\257\347\256\241\347\220\206", nullptr));
+        pride_information_manage->setText(QCoreApplication::translate("Widget", "\345\245\226\346\203\251\344\277\241\346\201\257\347\256\241\347\220\206", nullptr));
         score_information_manage->setText(QCoreApplication::translate("Widget", "\346\210\220\347\273\251\344\277\241\346\201\257\347\256\241\347\220\206", nullptr));
         student_information_manage->setText(QCoreApplication::translate("Widget", "\345\255\246\347\224\237\344\277\241\346\201\257\347\256\241\347\220\206", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("Widget", "\346\267\273\345\212\240", nullptr));
+        add_page->setText(QCoreApplication::translate("Widget", "\346\267\273\345\212\240", nullptr));
         delete_page->setText(QCoreApplication::translate("Widget", "\345\210\240\351\231\244", nullptr));
         back_1->setText(QCoreApplication::translate("Widget", "\350\277\224\345\233\236", nullptr));
         label_4->setText(QCoreApplication::translate("Widget", "\345\255\246\347\224\237\344\277\241\346\201\257\347\256\241\347\220\206", nullptr));
@@ -2296,22 +2688,29 @@ public:
         manage_search_subject->setText(QCoreApplication::translate("Widget", "\346\237\245\350\257\242", nullptr));
         label_18->setText(QCoreApplication::translate("Widget", "\347\254\254\344\272\224\351\227\250\350\257\276", nullptr));
         label_17->setText(QCoreApplication::translate("Widget", "\347\254\254\345\233\233\351\227\250\350\257\276\357\274\232", nullptr));
-        manage_alter_subject->setText(QCoreApplication::translate("Widget", "\344\277\256\346\224\271", nullptr));
-        label_16->setText(QCoreApplication::translate("Widget", "\347\254\254\344\270\211\351\227\250\350\257\276\357\274\232", nullptr));
         label_14->setText(QCoreApplication::translate("Widget", "\347\254\254\344\270\200\351\227\250\350\257\276\357\274\232", nullptr));
         back_subject->setText(QCoreApplication::translate("Widget", "\350\277\224\345\233\236", nullptr));
+        label_16->setText(QCoreApplication::translate("Widget", "\347\254\254\344\270\211\351\227\250\350\257\276\357\274\232", nullptr));
+        manage_alter_subject->setText(QCoreApplication::translate("Widget", "\344\277\256\346\224\271", nullptr));
         manage_confirm_subject->setText(QCoreApplication::translate("Widget", "\347\241\256\350\256\244", nullptr));
+        label_65->setText(QCoreApplication::translate("Widget", "\345\255\246\345\210\206", nullptr));
+        label_66->setText(QCoreApplication::translate("Widget", "\345\255\246\345\210\206", nullptr));
+        label_67->setText(QCoreApplication::translate("Widget", "\345\255\246\345\210\206", nullptr));
+        label_68->setText(QCoreApplication::translate("Widget", "\345\255\246\345\210\206", nullptr));
+        label_69->setText(QCoreApplication::translate("Widget", "\345\255\246\345\210\206", nullptr));
         label_19->setText(QCoreApplication::translate("Widget", "\346\210\220\347\273\251\344\277\241\346\201\257\347\256\241\347\220\206", nullptr));
+        label_63->setText(QCoreApplication::translate("Widget", "\345\271\263 \345\235\207 \345\210\206\357\274\232", nullptr));
+        label_64->setText(QCoreApplication::translate("Widget", "\346\216\222    \345\220\215\357\274\232", nullptr));
         manage_search_score->setText(QCoreApplication::translate("Widget", "\346\237\245\350\257\242", nullptr));
-        back_score->setText(QCoreApplication::translate("Widget", "\350\277\224\345\233\236", nullptr));
         first_subject_name->setText(QCoreApplication::translate("Widget", "\347\254\254\344\270\200\351\227\250\350\257\276\357\274\232", nullptr));
-        third_subject_name->setText(QCoreApplication::translate("Widget", "\347\254\254\344\270\211\351\227\250\350\257\276\357\274\232", nullptr));
         label_20->setText(QCoreApplication::translate("Widget", "\350\276\223\345\205\245\345\255\246\347\224\237\345\247\223\345\220\215\357\274\232", nullptr));
+        third_subject_name->setText(QCoreApplication::translate("Widget", "\347\254\254\344\270\211\351\227\250\350\257\276\357\274\232", nullptr));
         second_subject_name->setText(QCoreApplication::translate("Widget", "\347\254\254\344\272\214\351\227\250\350\257\276\357\274\232", nullptr));
-        manage_alter_score->setText(QCoreApplication::translate("Widget", "\344\277\256\346\224\271", nullptr));
         fifth_subject_name->setText(QCoreApplication::translate("Widget", "\347\254\254\344\272\224\351\227\250\350\257\276:", nullptr));
         manage_confirm_score->setText(QCoreApplication::translate("Widget", "\347\241\256\350\256\244", nullptr));
+        manage_alter_score->setText(QCoreApplication::translate("Widget", "\344\277\256\346\224\271", nullptr));
         forth_subject_name->setText(QCoreApplication::translate("Widget", "\347\254\254\345\233\233\351\227\250\350\257\276\357\274\232", nullptr));
+        back_score->setText(QCoreApplication::translate("Widget", "\350\277\224\345\233\236", nullptr));
         label_26->setText(QCoreApplication::translate("Widget", "\345\245\226\346\203\251\344\277\241\346\201\257\347\256\241\347\220\206", nullptr));
         manage_alter_rewardsandpunishment->setText(QCoreApplication::translate("Widget", "\344\277\256\346\224\271", nullptr));
         label_32->setText(QCoreApplication::translate("Widget", "\347\254\254\344\272\224\345\255\246\346\234\237\357\274\232", nullptr));
@@ -2330,6 +2729,14 @@ public:
         pushButton->setText(QCoreApplication::translate("Widget", "\345\210\240\351\231\244", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Widget", "\350\277\224\345\233\236", nullptr));
         label_48->setText(QCoreApplication::translate("Widget", "\350\276\223\345\205\245\345\247\223\345\220\215\357\274\232", nullptr));
+        label_61->setText(QCoreApplication::translate("Widget", "\347\224\237              \346\227\245\357\274\232", nullptr));
+        label_56->setText(QCoreApplication::translate("Widget", "\346\226\260\345\242\236\345\255\246\347\224\237\345\247\223\345\220\215\357\274\232", nullptr));
+        label_57->setText(QCoreApplication::translate("Widget", "\345\255\246\347\224\237\350\201\224\347\263\273\346\226\271\345\274\217\357\274\232", nullptr));
+        label_60->setText(QCoreApplication::translate("Widget", "\347\261\215              \350\264\257\357\274\232", nullptr));
+        label_58->setText(QCoreApplication::translate("Widget", "\346\200\247              \345\210\253\357\274\232", nullptr));
+        add_back->setText(QCoreApplication::translate("Widget", "\350\277\224\345\233\236", nullptr));
+        add_sure->setText(QCoreApplication::translate("Widget", "\347\241\256\345\256\232", nullptr));
+        label_55->setText(QCoreApplication::translate("Widget", "\346\267\273\345\212\240\345\255\246\347\224\237", nullptr));
     } // retranslateUi
 
 };

@@ -40,6 +40,15 @@ public:
     //管理端修改密码的对话框
     QDialog *Change_Code;
 
+    //查询同学的同名弹窗
+    QDialog *Search_samename;
+
+    QDialog *Subject_samename;
+
+    QDialog *Score_samename;
+
+    QDialog *Rap_samename;
+
  /*   //学生端基本信息查询的对话框
     QDialog *Search_student;
     //学生端班级信息查询的对话框
@@ -125,10 +134,9 @@ private slots:
 
     void on_add_page_clicked();
 
-    int samename(QString Name);
+    bool samename(QString Name);
 
 private:
-    Students *samename_inf[100];
 
     int timeID;
 

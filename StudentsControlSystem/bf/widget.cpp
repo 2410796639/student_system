@@ -651,34 +651,108 @@ void Widget::on_student_information_manage_clicked()
         }else
         {
 
-            bool Exsit = 0;
-            Students *p2 = myclass.start;
-            for(;;)
+            //下一段为yry编写的同名学生部分
+            //samename=1则表示有同名，需要弹窗；
+            if(samename(ui->get_student_name_information->text()))
             {
+                Search_samename = new QDialog (this);
+                Search_samename ->setFixedSize(800,400);
 
-                if(p2 == NULL)
-                    break;
-                if(p2->getName() == ui->get_student_name_information->text())
+                QLabel *same_search_tip = new QLabel(Search_samename);
+                same_search_tip->setText("出现同名！请用学号查询！");
+                same_search_tip->setGeometry(100,30,200,100);
+
+                QLineEdit *same_search_num = new QLineEdit(Search_samename);
+                same_search_num->setGeometry(350,50,300,40);
+
+                QPushButton *same_search_sure = new QPushButton(Search_samename);
+                same_search_sure->setGeometry(360,250,100,30);
+                same_search_sure->setText("确定");
+
+                QPushButton *same_search_cancel = new QPushButton(Search_samename);
+                same_search_cancel->setGeometry(500,250,100,30);
+                same_search_cancel->setText("取消");
+
+                connect(same_search_sure,&QPushButton::clicked,
+                        [=]()
                 {
-                    Exsit = 1;
-                    break;
-                }
-                p2 = p2->next;
+                    QString same_num = same_search_num->text();
+
+                    bool Exsit = 0;
+                    Students *p2 = myclass.start;
+                    for(;;)
+                    {
+
+                        if(p2 == NULL)
+                            break;
+                        if(p2->getID_number() == same_num.toInt())
+                        {
+                            Exsit = 1;
+                            break;
+                        }
+                        p2 = p2->next;
+                    }
+                    if(Exsit == 0)
+                    {
+                        QMessageBox::warning(ui->get_student_name_information,"错误","无此学生");
+                        return;
+                    }
+                    Search_samename->close();
+                    Students *p1 = myclass.selectStudents(same_num.toInt());
+                    ui->student_name_read->setText(p1->getName());
+                    ui->student_number_read->setText(QString ("%1").arg(p1->getID_number()));
+                    ui->student_place_read->setText(p1->getPlace());
+                    ui->student_gender_read->setText(p1->getGender());
+                    ui->student_phone_read->setText(p1->getPhone_number());
+                    ui->student_birth_read->setText(p1->getBirthday());
+                    ui->manage_alter_information->show();
+                });
+
+
+                connect(same_search_cancel,&QPushButton::clicked,
+                        [=]()
+                {
+                    Search_samename->close();
+                });
+
+                Search_samename->exec();
             }
-            if(Exsit == 0)
+
+            //else以下恢复陈雪鹏的代码
+            else
             {
-                QMessageBox::warning(ui->get_student_name_information,"错误","无此学生");
-                return;
+                bool Exsit = 0;
+                Students *p2 = myclass.start;
+                for(;;)
+                {
+
+                    if(p2 == NULL)
+                        break;
+                    if(p2->getName() == ui->get_student_name_information->text())
+                    {
+                        Exsit = 1;
+                        break;
+                    }
+                    p2 = p2->next;
+                }
+                if(Exsit == 0)
+                {
+                    QMessageBox::warning(ui->get_student_name_information,"错误","无此学生");
+                    return;
+                }
+                Students *p1 = myclass.selectStudents(ui->get_student_name_information->text());
+                ui->student_name_read->setText(p1->getName());
+                ui->student_number_read->setText(QString ("%1").arg(p1->getID_number()));
+                ui->student_place_read->setText(p1->getPlace());
+                ui->student_gender_read->setText(p1->getGender());
+                ui->student_phone_read->setText(p1->getPhone_number());
+                ui->student_birth_read->setText(p1->getBirthday());
+                ui->manage_alter_information->show();
+                return ;
             }
-            Students *p1 = myclass.selectStudents(ui->get_student_name_information->text());
-            ui->student_name_read->setText(p1->getName());
-            ui->student_number_read->setText(QString ("%1").arg(p1->getID_number()));
-            ui->student_place_read->setText(p1->getPlace());
-            ui->student_gender_read->setText(p1->getGender());
-            ui->student_phone_read->setText(p1->getPhone_number());
-            ui->student_birth_read->setText(p1->getBirthday());
-            ui->manage_alter_information->show();
-            return ;
+
+
+
         }
     });
     connect(ui->manage_alter_information,&QPushButton::clicked,
@@ -753,39 +827,117 @@ void Widget::on_subject_information_manage_clicked()
             return ;
         }else
         {
-            bool Exsit = 0;
-            Students *p2 = myclass.start;
-            for(;;)
+            //下一段为yry编写：
+            if(samename(ui->get_student_name_subject->text()))
             {
+                Subject_samename = new QDialog (this);
+                Subject_samename ->setFixedSize(800,400);
 
-                if(p2 == NULL)
-                    break;
-                if(p2->getName() == ui->get_student_name_subject->text())
+                QLabel *same_subject_tip = new QLabel(Subject_samename);
+                same_subject_tip->setText("出现同名！请用学号查询！");
+                same_subject_tip->setGeometry(100,30,200,100);
+
+                QLineEdit *same_subject_num = new QLineEdit(Subject_samename);
+                same_subject_num->setGeometry(350,50,300,40);
+
+                QPushButton *same_subject_sure = new QPushButton(Subject_samename);
+                same_subject_sure->setGeometry(360,250,100,30);
+                same_subject_sure->setText("确定");
+
+                QPushButton *same_subject_cancel = new QPushButton(Subject_samename);
+                same_subject_cancel->setGeometry(500,250,100,30);
+                same_subject_cancel->setText("取消");
+
+                connect(same_subject_sure,&QPushButton::clicked,
+                        [=]()
                 {
-                    Exsit = 1;
-                    break;
-                }
-                p2 = p2->next;
-            }
-            if(Exsit == 0)
-            {
-                QMessageBox::warning(ui->get_student_name_subject,"错误","无此学生");
-                return;
+                    QString same_num = same_subject_num->text();
+
+                    bool Exsit = 0;
+                    Students *p2 = myclass.start;
+                    for(;;)
+                    {
+
+                        if(p2 == NULL)
+                            break;
+                        if(p2->getID_number() == same_num.toInt())
+                        {
+                            Exsit = 1;
+                            break;
+                        }
+                        p2 = p2->next;
+                    }
+                    if(Exsit == 0)
+                    {
+                        QMessageBox::warning(ui->get_student_name_subject,"错误","无此学生");
+                        return;
+                    }
+
+                    Subject_samename->close();
+
+                    Students *p1 = myclass.selectStudents(ui->get_student_name_subject->text());
+                    ui->first_subject->setText(p1->Mycourse[0].getCourse_name());
+                    ui->second_subject->setText(p1->Mycourse[1].getCourse_name());
+                    ui->third_subject->setText(p1->Mycourse[2].getCourse_name());
+                    ui->forth_subject->setText(p1->Mycourse[3].getCourse_name());
+                    ui->fifth_subject->setText(p1->Mycourse[4].getCourse_name());
+                    ui->credit1->setText(QString("%1").arg(p1->Mycourse[0].getCredit()));
+                    ui->credit2->setText(QString("%1").arg(p1->Mycourse[1].getCredit()));
+                    ui->credit3->setText(QString("%1").arg(p1->Mycourse[2].getCredit()));
+                    ui->credit4->setText(QString("%1").arg(p1->Mycourse[3].getCredit()));
+                    ui->credit5->setText(QString("%1").arg(p1->Mycourse[4].getCredit()));
+                    ui->manage_alter_subject->show();
+                    return ;
+                });
+
+                connect(same_subject_cancel,&QPushButton::clicked,
+                        [=]()
+                {
+                    Subject_samename->close();
+                });
+
+                Subject_samename->exec();
+
             }
 
-            Students *p1 = myclass.selectStudents(ui->get_student_name_subject->text());
-            ui->first_subject->setText(p1->Mycourse[0].getCourse_name());
-            ui->second_subject->setText(p1->Mycourse[1].getCourse_name());
-            ui->third_subject->setText(p1->Mycourse[2].getCourse_name());
-            ui->forth_subject->setText(p1->Mycourse[3].getCourse_name());
-            ui->fifth_subject->setText(p1->Mycourse[4].getCourse_name());
-            ui->credit1->setText(QString("%1").arg(p1->Mycourse[0].getCredit()));
-            ui->credit2->setText(QString("%1").arg(p1->Mycourse[1].getCredit()));
-            ui->credit3->setText(QString("%1").arg(p1->Mycourse[2].getCredit()));
-            ui->credit4->setText(QString("%1").arg(p1->Mycourse[3].getCredit()));
-            ui->credit5->setText(QString("%1").arg(p1->Mycourse[4].getCredit()));
-            ui->manage_alter_subject->show();
-            return ;
+            //else后恢复陈雪鹏编写
+            else
+            {
+                bool Exsit = 0;
+                Students *p2 = myclass.start;
+                for(;;)
+                {
+
+                    if(p2 == NULL)
+                        break;
+                    if(p2->getName() == ui->get_student_name_subject->text())
+                    {
+                        Exsit = 1;
+                        break;
+                    }
+                    p2 = p2->next;
+                }
+                if(Exsit == 0)
+                {
+                    QMessageBox::warning(ui->get_student_name_subject,"错误","无此学生");
+                    return;
+                }
+
+                Students *p1 = myclass.selectStudents(ui->get_student_name_subject->text());
+                ui->first_subject->setText(p1->Mycourse[0].getCourse_name());
+                ui->second_subject->setText(p1->Mycourse[1].getCourse_name());
+                ui->third_subject->setText(p1->Mycourse[2].getCourse_name());
+                ui->forth_subject->setText(p1->Mycourse[3].getCourse_name());
+                ui->fifth_subject->setText(p1->Mycourse[4].getCourse_name());
+                ui->credit1->setText(QString("%1").arg(p1->Mycourse[0].getCredit()));
+                ui->credit2->setText(QString("%1").arg(p1->Mycourse[1].getCredit()));
+                ui->credit3->setText(QString("%1").arg(p1->Mycourse[2].getCredit()));
+                ui->credit4->setText(QString("%1").arg(p1->Mycourse[3].getCredit()));
+                ui->credit5->setText(QString("%1").arg(p1->Mycourse[4].getCredit()));
+                ui->manage_alter_subject->show();
+                return ;
+            }
+
         }
     });
     connect(ui->manage_alter_subject,&QPushButton::clicked,
@@ -872,43 +1024,123 @@ void Widget::on_score_information_manage_clicked()
             return ;
         }else
         {
-            bool Exsit = 0;
-            Students *p2 = myclass.start;
-            for(;;)
-            {
 
-                if(p2 == NULL)
-                    break;
-                if(p2->getName() == ui->get_student_name_score->text())
+            //下面又为yry编写
+            if(samename(ui->get_student_name_score->text()))
+            {
+                Score_samename = new QDialog (this);
+                Score_samename ->setFixedSize(800,400);
+
+                QLabel *same_score_tip = new QLabel(Score_samename);
+                same_score_tip->setText("出现同名！请用学号查询！");
+                same_score_tip->setGeometry(100,30,200,100);
+
+                QLineEdit *same_score_num = new QLineEdit(Score_samename);
+                same_score_num->setGeometry(350,50,300,40);
+
+                QPushButton *same_score_sure = new QPushButton(Score_samename);
+                same_score_sure->setGeometry(360,250,100,30);
+                same_score_sure->setText("确定");
+
+                QPushButton *same_score_cancel = new QPushButton(Score_samename);
+                same_score_cancel->setGeometry(500,250,100,30);
+                same_score_cancel->setText("取消");
+
+                connect(same_score_sure,&QPushButton::clicked,
+                        [=]()
                 {
-                    Exsit = 1;
-                    break;
-                }
-                p2 = p2->next;
+                    QString same_num = same_score_num->text();
+
+                    bool Exsit = 0;
+                    Students *p2 = myclass.start;
+                    for(;;)
+                    {
+
+                        if(p2 == NULL)
+                            break;
+                        if(p2->getID_number() == same_num.toInt())
+                        {
+                            Exsit = 1;
+                            break;
+                        }
+                        p2 = p2->next;
+                    }
+                    if(Exsit == 0)
+                    {
+                        QMessageBox::warning(ui->get_student_name_score,"错误","无此学生");
+                        return;
+                    }
+
+                    Score_samename->close();
+
+                    Students *p1 = myclass.selectStudents(ui->get_student_name_score->text());
+                    ui->first_subject_name->setText(p1->Mycourse[0].getCourse_name());
+                    ui->second_subject_name->setText(p1->Mycourse[1].getCourse_name());
+                    ui->third_subject_name->setText(p1->Mycourse[2].getCourse_name());
+                    ui->forth_subject_name->setText(p1->Mycourse[3].getCourse_name());
+                    ui->fifth_subject_name->setText(p1->Mycourse[4].getCourse_name());
+                    ui->first_subject_score->setText(QString("%1").arg(p1->Mycourse[0].getGrade()));
+                    ui->second_subject_score->setText(QString("%1").arg(p1->Mycourse[1].getGrade()));
+                    ui->third_subject_score->setText(QString("%1").arg( p1->Mycourse[2].getGrade()));
+                    ui->forth_subject_score->setText(QString("%1").arg( p1->Mycourse[3].getGrade()));
+                    ui->fifth_subject_score->setText(QString("%1").arg( p1->Mycourse[4].getGrade()));
+                    ui->average->setText(QString("%1").arg(p1->getAverageGrade()));
+                    ui->rank->setText(QString("%1").arg(myclass.getStudents_rand(ui->get_student_name_score->text())));
+                    ui->manage_alter_score->show();
+                    return ;
+
+                });
+
+                connect(same_score_cancel,&QPushButton::clicked,
+                        [=]()
+                {
+                    Score_samename->close();
+                });
+
+                Score_samename->exec();
+
             }
-            if(Exsit == 0)
+
+            //else后又恢复陈雪鹏编写
+
+            else
             {
-                QMessageBox::warning(ui->get_student_name_score,"错误","无此学生");
-                return;
+                bool Exsit = 0;
+                Students *p2 = myclass.start;
+                for(;;)
+                {
+
+                    if(p2 == NULL)
+                        break;
+                    if(p2->getName() == ui->get_student_name_score->text())
+                    {
+                        Exsit = 1;
+                        break;
+                    }
+                    p2 = p2->next;
+                }
+                if(Exsit == 0)
+                {
+                    QMessageBox::warning(ui->get_student_name_score,"错误","无此学生");
+                    return;
+                }
+
+                Students *p1 = myclass.selectStudents(ui->get_student_name_score->text());
+                ui->first_subject_name->setText(p1->Mycourse[0].getCourse_name());
+                ui->second_subject_name->setText(p1->Mycourse[1].getCourse_name());
+                ui->third_subject_name->setText(p1->Mycourse[2].getCourse_name());
+                ui->forth_subject_name->setText(p1->Mycourse[3].getCourse_name());
+                ui->fifth_subject_name->setText(p1->Mycourse[4].getCourse_name());
+                ui->first_subject_score->setText(QString("%1").arg(p1->Mycourse[0].getGrade()));
+                ui->second_subject_score->setText(QString("%1").arg(p1->Mycourse[1].getGrade()));
+                ui->third_subject_score->setText(QString("%1").arg( p1->Mycourse[2].getGrade()));
+                ui->forth_subject_score->setText(QString("%1").arg( p1->Mycourse[3].getGrade()));
+                ui->fifth_subject_score->setText(QString("%1").arg( p1->Mycourse[4].getGrade()));
+                ui->average->setText(QString("%1").arg(p1->getAverageGrade()));
+                ui->rank->setText(QString("%1").arg(myclass.getStudents_rand(ui->get_student_name_score->text())));
+                ui->manage_alter_score->show();
+                return ;
             }
-
-
-
-            Students *p1 = myclass.selectStudents(ui->get_student_name_score->text());
-            ui->first_subject_name->setText(p1->Mycourse[0].getCourse_name());
-            ui->second_subject_name->setText(p1->Mycourse[1].getCourse_name());
-            ui->third_subject_name->setText(p1->Mycourse[2].getCourse_name());
-            ui->forth_subject_name->setText(p1->Mycourse[3].getCourse_name());
-            ui->fifth_subject_name->setText(p1->Mycourse[4].getCourse_name());
-            ui->first_subject_score->setText(QString("%1").arg(p1->Mycourse[0].getGrade()));
-            ui->second_subject_score->setText(QString("%1").arg(p1->Mycourse[1].getGrade()));
-            ui->third_subject_score->setText(QString("%1").arg( p1->Mycourse[2].getGrade()));
-            ui->forth_subject_score->setText(QString("%1").arg( p1->Mycourse[3].getGrade()));
-            ui->fifth_subject_score->setText(QString("%1").arg( p1->Mycourse[4].getGrade()));
-            ui->average->setText(QString("%1").arg(p1->getAverageGrade()));
-            ui->rank->setText(QString("%1").arg(myclass.getStudents_rand(ui->get_student_name_score->text())));
-            ui->manage_alter_score->show();
-            return ;
         }
     });
     connect(ui->manage_alter_score,&QPushButton::clicked,
@@ -994,45 +1226,129 @@ void Widget::on_pride_information_manage_clicked()
             return ;
         }else
         {
-            bool Exsit = 0;
-            Students *p2 = myclass.start;
-            for(;;)
+            //下面为yry编写
+            if(samename(ui->get_student_name_rewardsandpunishment->text()))
             {
+                Rap_samename = new QDialog (this);
+                Rap_samename ->setFixedSize(800,400);
 
-                if(p2 == NULL)
-                    break;
-                if(p2->getName() == ui->get_student_name_rewardsandpunishment->text())
+                QLabel *same_rap_tip = new QLabel(Rap_samename);
+                same_rap_tip->setText("出现同名！请用学号查询！");
+                same_rap_tip->setGeometry(100,30,200,100);
+
+                QLineEdit *same_rap_num = new QLineEdit(Rap_samename);
+                same_rap_num->setGeometry(350,50,300,40);
+
+                QPushButton *same_rap_sure = new QPushButton(Rap_samename);
+                same_rap_sure->setGeometry(360,250,100,30);
+                same_rap_sure->setText("确定");
+
+                QPushButton *same_rap_cancel = new QPushButton(Rap_samename);
+                same_rap_cancel->setGeometry(500,250,100,30);
+                same_rap_cancel->setText("取消");
+
+                connect(same_rap_sure,&QPushButton::clicked,
+                        [=]()
                 {
-                    Exsit = 1;
-                    break;
-                }
-                p2 = p2->next;
-            }
-            if(Exsit == 0)
-            {
-                QMessageBox::warning(ui->get_student_name_rewardsandpunishment,"错误","无此学生");
-                return;
-            }
-            Students *p1 = myclass.selectStudents(ui->get_student_name_rewardsandpunishment->text());
-            ui->first_reward->setText(change_pride(p1->getPride(1)));
-            ui->second_reward->setText(change_pride(p1->getPride(2)));
-            ui->third_reward->setText(change_pride(p1->getPride(3)));
-            ui->forth_reward->setText(change_pride(p1->getPride(4)));
-            ui->fifth_reward->setText(change_pride(p1->getPride(5)));
-            ui->sixth_reward->setText(change_pride(p1->getPride(6)));
-            ui->seventh_reward->setText(change_pride(p1->getPride(7)));
-            ui->eighth_reward->setText(change_pride(p1->getPride(8)));
-            ui->first_punishment->setText(change_punishment(p1->getPunishment(1)));
-            ui->second_punishment->setText(change_punishment(p1->getPunishment(2)));
-            ui->third_punishment->setText(change_punishment(p1->getPunishment(3)));
-            ui->forth_punishment->setText(change_punishment(p1->getPunishment(4)));
-            ui->fifth_punishment->setText(change_punishment(p1->getPunishment(5)));
-            ui->sixth_punishment->setText(change_punishment(p1->getPunishment(6)));
-            ui->seventh_punishment->setText(change_punishment(p1->getPunishment(7)));
-            ui->eighth_punishment->setText(change_punishment(p1->getPunishment(8)));
+                    QString same_num = same_rap_num->text();
 
-            ui->manage_alter_rewardsandpunishment->show();
-            return ;
+                    bool Exsit = 0;
+                    Students *p2 = myclass.start;
+                    for(;;)
+                    {
+
+                        if(p2 == NULL)
+                            break;
+                        if(p2->getID_number() == same_num.toInt())
+                        {
+                            Exsit = 1;
+                            break;
+                        }
+                        p2 = p2->next;
+                    }
+                    if(Exsit == 0)
+                    {
+                        QMessageBox::warning(ui->get_student_name_rewardsandpunishment,"错误","无此学生");
+                        return;
+                    }
+
+                    Rap_samename->close();
+
+                    Students *p1 = myclass.selectStudents(ui->get_student_name_rewardsandpunishment->text());
+                    ui->first_reward->setText(change_pride(p1->getPride(1)));
+                    ui->second_reward->setText(change_pride(p1->getPride(2)));
+                    ui->third_reward->setText(change_pride(p1->getPride(3)));
+                    ui->forth_reward->setText(change_pride(p1->getPride(4)));
+                    ui->fifth_reward->setText(change_pride(p1->getPride(5)));
+                    ui->sixth_reward->setText(change_pride(p1->getPride(6)));
+                    ui->seventh_reward->setText(change_pride(p1->getPride(7)));
+                    ui->eighth_reward->setText(change_pride(p1->getPride(8)));
+                    ui->first_punishment->setText(change_punishment(p1->getPunishment(1)));
+                    ui->second_punishment->setText(change_punishment(p1->getPunishment(2)));
+                    ui->third_punishment->setText(change_punishment(p1->getPunishment(3)));
+                    ui->forth_punishment->setText(change_punishment(p1->getPunishment(4)));
+                    ui->fifth_punishment->setText(change_punishment(p1->getPunishment(5)));
+                    ui->sixth_punishment->setText(change_punishment(p1->getPunishment(6)));
+                    ui->seventh_punishment->setText(change_punishment(p1->getPunishment(7)));
+                    ui->eighth_punishment->setText(change_punishment(p1->getPunishment(8)));
+
+                    ui->manage_alter_rewardsandpunishment->show();
+                    return ;
+
+                });
+
+                connect(same_rap_cancel,&QPushButton::clicked,
+                        [=]()
+                {
+                    Rap_samename->close();
+                });
+
+                Rap_samename->exec();
+            }
+
+            //else后恢复陈雪鹏编写
+            else {
+                bool Exsit = 0;
+                Students *p2 = myclass.start;
+                for(;;)
+                {
+
+                    if(p2 == NULL)
+                        break;
+                    if(p2->getName() == ui->get_student_name_rewardsandpunishment->text())
+                    {
+                        Exsit = 1;
+                        break;
+                    }
+                    p2 = p2->next;
+                }
+                if(Exsit == 0)
+                {
+                    QMessageBox::warning(ui->get_student_name_rewardsandpunishment,"错误","无此学生");
+                    return;
+                }
+                Students *p1 = myclass.selectStudents(ui->get_student_name_rewardsandpunishment->text());
+                ui->first_reward->setText(change_pride(p1->getPride(1)));
+                ui->second_reward->setText(change_pride(p1->getPride(2)));
+                ui->third_reward->setText(change_pride(p1->getPride(3)));
+                ui->forth_reward->setText(change_pride(p1->getPride(4)));
+                ui->fifth_reward->setText(change_pride(p1->getPride(5)));
+                ui->sixth_reward->setText(change_pride(p1->getPride(6)));
+                ui->seventh_reward->setText(change_pride(p1->getPride(7)));
+                ui->eighth_reward->setText(change_pride(p1->getPride(8)));
+                ui->first_punishment->setText(change_punishment(p1->getPunishment(1)));
+                ui->second_punishment->setText(change_punishment(p1->getPunishment(2)));
+                ui->third_punishment->setText(change_punishment(p1->getPunishment(3)));
+                ui->forth_punishment->setText(change_punishment(p1->getPunishment(4)));
+                ui->fifth_punishment->setText(change_punishment(p1->getPunishment(5)));
+                ui->sixth_punishment->setText(change_punishment(p1->getPunishment(6)));
+                ui->seventh_punishment->setText(change_punishment(p1->getPunishment(7)));
+                ui->eighth_punishment->setText(change_punishment(p1->getPunishment(8)));
+
+                ui->manage_alter_rewardsandpunishment->show();
+                return ;
+            }
+
         }
     });
     connect(ui->manage_alter_rewardsandpunishment,&QPushButton::clicked,
@@ -1215,9 +1531,43 @@ void Widget::on_delete_page_clicked()
     connect(ui->pushButton,&QPushButton::clicked,
             [=]()
     {
+        //
+        //
+        //
+        //判断是否输入字符串
+                   if(ui->lineEdit->text() == "")
+                   {
+                       QMessageBox::warning(Get_information,"错误","未输入姓名");
+                       return;
+                   }
+
+
+                   //判断输入学生是否存在
+                   bool Exsit = 0;
+                   Students *p1 = myclass.start;
+                   for(;;)
+                   {
+
+                       if(p1 == NULL)
+                           break;
+                       if(p1->getName() == ui->lineEdit->text())
+                       {
+                           Exsit = 1;
+                           break;
+                       }
+                       p1 = p1->next;
+                   }
+                   if(Exsit == 0)
+                   {
+                       QMessageBox::warning(ui->delete_2,"错误","无此学生");
+                       return;
+                   }
+
         myclass.moveStudents(ui->lineEdit->text());
         QMessageBox::about(this,"提示","已成功删除！");
         ui->lineEdit->clear();
+
+
     });
     connect(ui->pushButton_2,&QPushButton::clicked,
             [=]()
@@ -1261,6 +1611,18 @@ void Widget::on_add_page_clicked()
             //返回工作状态
             QMessageBox::about(this,"提示","已成功添加！");
         }
+        for(int i=0;i<5;i++)
+        {
+            myclass.selectStudents(Name1)->Mycourse[i].setCourse_name("   无");
+            myclass.selectStudents(Name1)->Mycourse[i].setCredit(0);
+            myclass.selectStudents(Name1)->Mycourse[i].setGrade(0);
+
+        }
+        for(int i=0;i<8;i++)
+        {
+            myclass.selectStudents(Name1)->setPride(i+1,0);
+            myclass.selectStudents(Name1)->setPunishment(i+1,0);
+        }
 
         //每次填写完成关闭弹窗需把文本框中内容清空，来方便下一次填写
         ui->addstudent_name->clear();//清空
@@ -1285,7 +1647,8 @@ void Widget::paintEvent(QPaintEvent *)
     //pic.end();
 }
 
-int Widget::samename(QString Name)
+//用于判断该姓名是否是重复的
+bool Widget::samename(QString Name)
 {
     Students *fp = myclass.start;
 
@@ -1296,13 +1659,18 @@ int Widget::samename(QString Name)
             break;
         if(fp -> getName() == Name)
             {
-            samename_inf[num] = fp;
             num++;
         }
         fp = fp->next;
     };
 
-    return num;
+    if(num>1)
+    {
+        return 1;
+    }
+    else {
+        return 0;
+    }
 }
 
 //时间函数，用于实时更新Control界面上显示的班级当前人数

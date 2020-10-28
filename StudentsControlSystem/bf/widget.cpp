@@ -337,65 +337,91 @@ Widget::Widget(QWidget *parent)
         Getcode_pb->setText("确认");
 
 
+        //此处往下为修改密码功能:
         QPushButton *Changecode = new QPushButton(Get_code);
         Changecode->setGeometry(660,350,70,30);
         Changecode->setText("修改密码");
+
         connect(Changecode,&QPushButton::clicked,
                 [=]()
         {
             Change_Code = new QDialog(Get_code);
             Change_Code->setFixedSize(800,400);
+
             QLabel *change_tip1 = new QLabel(Change_Code);
             change_tip1->setText("请输入原密码：");
             change_tip1->setGeometry(100,30,100,100);
+
             QLineEdit *primCode = new QLineEdit(Change_Code);
             primCode->setEchoMode(QLineEdit::Password);
             primCode->setGeometry(350,50,300,40);
+
             QLabel *change_tip2 = new QLabel(Change_Code);
             change_tip2->setText("修改后密码：");
             change_tip2->setGeometry(100,75,100,100);
+
             QLineEdit *newCode = new QLineEdit(Change_Code);
             newCode->setEchoMode(QLineEdit::Password);
             newCode->setGeometry(350,100,300,40);
+
             QLabel *change_tip3 = new QLabel(Change_Code);
             change_tip3->setText("再次输入新密码：");
             change_tip3->setGeometry(100,120,120,100);
+
             QLineEdit *reCode = new QLineEdit(Change_Code);
             reCode->setEchoMode(QLineEdit::Password);
             reCode->setGeometry(350,150,300,40);
+
             QPushButton *ChangeSure = new QPushButton(Change_Code);
             ChangeSure->setGeometry(360,250,100,30);
             ChangeSure->setText("确定");
+
             QPushButton *ChangeCancel = new QPushButton(Change_Code);
             ChangeCancel->setGeometry(500,250,100,30);
             ChangeCancel->setText("取消");
+
             connect(ChangeSure,&QPushButton::clicked,
                     [=]()
             {
                 QString PrimCodeText;
                 PrimCodeText.clear();
                 PrimCodeText+=primCode->text();
+
                 QString NewCodeText;
                 NewCodeText.clear();
                 NewCodeText+=newCode->text();
+
                 QString ReCodeText;
                 ReCodeText.clear();
                 ReCodeText+=reCode->text();
-                if(PrimCodeText!=defaultCode)
+
+                if(PrimCodeText==""||ReCodeText==""||defaultCode=="")
                 {
-                    QMessageBox::warning(Change_Code,"错误","原密码输入错误！");
+                    QMessageBox::warning(Change_Code,"错误","请不要留空！");
                 }
-                else if(NewCodeText!=ReCodeText)
+
+                else
                 {
-                    QMessageBox::warning(Change_Code,"错误","两次新密码不一致！");
-                }
-                else {
-                    defaultCode.clear();
-                    defaultCode += NewCodeText;
-                    QMessageBox::about(Change_Code,"提示","修改成功！");
-                    Change_Code->close();
+                    if(PrimCodeText!=defaultCode)
+                    {
+                        QMessageBox::warning(Change_Code,"错误","原密码输入错误！");
+                    }
+                    else if(NewCodeText!=ReCodeText)
+                    {
+                        QMessageBox::warning(Change_Code,"错误","两次新密码不一致！");
+                    }
+                    else {
+                        defaultCode.clear();
+                        defaultCode += NewCodeText;
+
+                        QMessageBox::about(Change_Code,"提示","修改成功！");
+
+                        Change_Code->close();
+                    }
                 }
             });
+
+
             connect(ChangeCancel,&QPushButton::clicked,
                     [=]()
             {
@@ -434,6 +460,7 @@ Widget::Widget(QWidget *parent)
             Change_Code->exec();
         });
 
+        //时间函数，每1000毫秒即每秒刷新1次
         timeID = startTimer(1000);
 
 
@@ -623,12 +650,6 @@ void Widget::on_student_information_manage_clicked()
             return ;
         }else
         {
-
-            //yry:出现重名学生的情形，跳出窗口选择需要的学生
-            if(samename(ui->get_student_name_information->text())>1)
-            {
-
-            }
 
             bool Exsit = 0;
             Students *p2 = myclass.start;
@@ -1207,35 +1228,48 @@ void Widget::on_delete_page_clicked()
 
 void Widget::on_add_page_clicked()
 {
+    //进入添加学生页面
+    ui->stackedWidget->setCurrentWidget(ui->addstudent);
 
-    ui->stackedWidget->setCurrentWidget(ui->addstudent);//进入添加学生页面
-    ui->addstudent_name->clear();//清空输入框
+    //清空输入框
+    ui->addstudent_name->clear();
     ui->addstudent_birth->clear();
     ui->addstudent_phone->clear();
     ui->addstudent_place->clear();
     ui->addstudent_gender->clear();
+
     connect(ui->add_sure,&QPushButton::clicked,//当点击确认按钮（add_sure）时
             [=]()
     {
-        QString Name1=ui->addstudent_name->text();//获取输入的学生的各项信息
+        //获取输入的学生的各项信息
+        QString Name1=ui->addstudent_name->text();
         QString Phone_number1=ui->addstudent_phone->text();
         QString Gender1=ui->addstudent_gender->text();
         QString Place1=ui->addstudent_place->text();
         QString Birthday1=ui->addstudent_birth->text();
-        myclass.addStudents(Name1,Phone_number1,Gender1,Place1,Birthday1);//调用添加学生函数
+
+        //调用添加学生函数
+        myclass.addStudents(Name1,Phone_number1,Gender1,Place1,Birthday1);
+
+        //判断最基础的信息是否填写完整
         if(Name1==""||Phone_number1==""||Gender1==""||Place1==""||Birthday1=="")
         {
             QMessageBox::warning(this,"错误！","未输入全该同学的基础信息！");
         }
+
         else {
-            QMessageBox::about(this,"提示","已成功添加！");//返回工作状态
+            //返回工作状态
+            QMessageBox::about(this,"提示","已成功添加！");
         }
+
+        //每次填写完成关闭弹窗需把文本框中内容清空，来方便下一次填写
         ui->addstudent_name->clear();//清空
         ui->addstudent_birth->clear();
         ui->addstudent_phone->clear();
         ui->addstudent_place->clear();
         ui->addstudent_gender->clear();
     });
+
     connect(ui->add_back,&QPushButton::clicked,
             [=]()
     {
@@ -1254,7 +1288,9 @@ void Widget::paintEvent(QPaintEvent *)
 int Widget::samename(QString Name)
 {
     Students *fp = myclass.start;
+
     int num = 0;
+
     for (;;) {
         if (fp==NULL)
             break;
@@ -1265,9 +1301,11 @@ int Widget::samename(QString Name)
         }
         fp = fp->next;
     };
+
     return num;
 }
 
+//时间函数，用于实时更新Control界面上显示的班级当前人数
 void Widget::timerEvent(QTimerEvent *)
 {
     ui->lcdNumber->display(myclass.getStudents_sum());

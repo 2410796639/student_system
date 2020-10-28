@@ -65,8 +65,10 @@ public:
 
 protected:
 
+    //时间事件
     void timerEvent(QTimerEvent*);
 
+    //绘图事件
     void paintEvent(QPaintEvent*);
 
 private slots:
